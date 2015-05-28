@@ -1,4 +1,4 @@
-$visual-grid: true;
+
 @import "bourbon";
 @import "neat-helpers";
 @import "base/base";
@@ -6,3 +6,4 @@ $visual-grid: true;
 
 //components
 @import "components/components";
+@import "sg/sg";

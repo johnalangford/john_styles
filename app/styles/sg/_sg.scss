@@ -1,0 +1,57 @@
+section {
+  padding: 0 2em 1em 2em;
+  @include outer-container;
+  h2:first-child {
+    color: #cf1b41;
+  }
+  .color-card {
+    @include span-columns(3);
+  }
+}
+
+.color-box {
+  height: 100px;
+}
+.pink {
+  background-color: pink;
+}
+.success {
+  background-color: green;
+}
+.failure {
+  background-color: red;
+}
+.dark-text {
+  background-color: green;
+}
+.light-text {
+  background-color: red;
+}
+
+.color-card {
+  box-shadow: 0 0 1px rgba(0,0,0,0.4);
+}
+.swatch-preview {
+border-top: 1px solid rgba(0,0,0,0.1);
+border-bottom: 1px solid rgba(0,0,0,0.1);
+display: block;
+float: left;
+height: 60px;
+width: 100%;
+margin: 0 0.8em 0.5em 0;
+}
+.swatch-details {
+  padding: 0 0 1em 1em;
+}
+.red {
+  background-color: #EC212F;
+}
+.error {
+  background-color: #FD1068;
+}
+.success {
+  background-color: #1AC295;
+}
+.failure {
+  background-color: #950DC0;
+}
