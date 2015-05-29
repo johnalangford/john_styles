@@ -149,7 +149,7 @@
   <h2 id="inputs">Inputs</h2>
   <h3 id="txtInput">Text Input</h3>
   <label>Default Label
-    <input type="text" id="text_field" placeholder="text / password / search / email">
+    <input type="text" id="textField" placeholder="text / password / search / email">
   </label>
 </section>
 <section>
@@ -168,13 +168,13 @@
 </section>
 <section>
   <h3 id="select">Select</h3>
-  <select name="select_element">
-    <optgroup label="Option Group 1">
+  <div class="select_element">
+    <select>
       <option value="1">Option 1</option>
       <option value="2">Option 2</option>
       <option value="3">Option 3</option>
-    </optgroup>
-  </select>
+    </select>
+  </div>
   <hr>
 </section>
 <section>
@@ -263,6 +263,87 @@
 
 <section>
   <h1 id="sg-main-title">Components</h1>
+</section>
+<section>
+  <h2 id="forms">Forms</h2>
+</section>
+<section>
+  <h3 id="search">Search</h3>
+  <div class="search">
+    <label>Default Label
+      <input type="text" id="textField" placeholder="text / password / search / email">
+      <button>{{fa-icon "fa-search"}}</button>
+    </label>
+  </div>
+  <hr>
+</section>
+<section>
+  <h3 id="filterSet">Filter Set</h3>
+  <hr>
+</section>
+<section>
+  <h3 id="login">Login</h3>
+  <hr>
+</section>
+
+<section>
+  <h2 id="graphs">Graphs</h2>
+</section>
+
+<section>
+  <h2 id="notifications">Notifications</h2>
+</section>
+<section>
+  <h3 id="overviewSquare">Square</h3>
+  <div class="square-notification">
+    <h3>80<span class="small-percent">%</span></h3>
+    <h5>456-0</h5>
+  </div>
+  <hr>
+</section>
+<section>
+  <h3 id="overviewSquareIssue">Square Issue</h3>
+  <div class="square-notification-issue">
+    <h3>80<span class="small-percent">%</span></h3>
+    <h5>456-0</h5>
+  </div>
+  <hr>
+</section>
+<section>
+  <h3 id="mo">MO</h3>
+  <div class="square-notification">
+    <h3>MO</h3>
+    <h5>{{fa-icon "fa-long-arrow-left"}}</h5>
+  </div>
+  <hr>
+</section>
+<section>
+  <h3 id="mo">MT</h3>
+  <div class="square-notification">
+    <h3>MT</h3>
+    <h5>{{fa-icon "fa-long-arrow-right"}}</h5>
+  </div>
+  <hr>
+</section>
+
+<section>
+  <h2>Entity</h2>
+</section>
+<section>
+  <h3>Entity</h3>
+  <div class="entity">
+    <h1>12345</h1>
+    <h4>22,000,000 msgs</h4>
+  </div>
+  <hr>
+</section>
+<section>
+  <h3>Entity W Error</h3>
+  <div class="entity-error">
+    <h1>12345</h1>
+    <h4>22,000,000 msgs</h4>
+  </div>
+  <hr>
 </section>
 
 {{outlet}}

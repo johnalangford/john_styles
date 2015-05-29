@@ -31,13 +31,13 @@ select[multiple=multiple],
 textarea {
   background-color: $base-background-color;
   border: $base-border;
-  border-radius: $base-border-radius;
+  border-radius: $base-border-radius * 2;
   box-shadow: $form-box-shadow;
   box-sizing: border-box;
   font-family: $base-font-family;
   font-size: $base-font-size;
   //margin-bottom: $base-spacing / 2;
-  padding: $base-spacing / 3;
+  padding: $base-spacing;
   transition: border-color;
   width: 100%;
 
@@ -71,11 +71,6 @@ input[type="file"] {
   width: 100%;
 }
 
-select {
-  margin-bottom: $base-spacing;
-  max-width: 100%;
-  width: auto;
-}
 .form-error {
   font-size: $base-font-size;
   font-style: italic;
@@ -86,14 +81,24 @@ select {
   background-color: red;
 }
 
-.glyphicon {
-position: relative;
-top: 1px;
-display: inline-block;
-font-family: 'Glyphicons Halflings';
-font-style: normal;
-font-weight: 400;
-line-height: 1;
--webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
+select {
+  margin-bottom: $base-spacing;
+  max-width: 100%;
+  width: auto;
+}
+.select_element {
+  //width: 240px;
+  //height: 44px;
+  overflow: hidden;
+}
+.select_element select{
+    background: white;
+   //width: 268px;
+   padding: 15px;
+   font-size: 16px;
+   line-height: 1;
+   border: 1;
+   border-radius: 10px;
+   height: 54px;
+   -webkit-appearance: none;
 }

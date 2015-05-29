@@ -8,8 +8,8 @@
 $visual-grid: true;
 
 // Neat Breakpoints
-$medium-screen: em(640);
+$small-screen: em(340);
 $large-screen: em(860);
 
-$medium-screen-up: new-breakpoint(min-width $medium-screen 4);
-$large-screen-up: new-breakpoint(min-width $large-screen 8);
+$small-screen-up: new-breakpoint(min-width $small-screen 6);
+$large-screen-up: new-breakpoint(min-width $large-screen 12);
