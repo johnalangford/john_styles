@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="13px" height="12px" viewBox="0 0 13 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>operator</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="mobile---TN" sketch:type="MSArtboardGroup" transform="translate(-11.000000, -444.000000)" fill="#FD1068">
+            <g id="CARDS-Copy" sketch:type="MSLayerGroup" transform="translate(0.000000, 324.000000)">
+                <g id="time" transform="translate(11.000000, 15.000000)" sketch:type="MSShapeGroup">
+                    <g id="operator" transform="translate(0.000000, 105.000000)">
+                        <path d="M10.6188094,3 L12,3 L12,6 L10.8055587,6 C10.7472581,6.04358977 10.6717536,6.04508893 10.5743554,6 L10,6 L10,3.80765391 C8.70019876,0.905074154 4.60926606,1.14940956 3,3.44697792 L3,6 L1,6 L1,3 L2.3491232,3 C4.16616182,-0.461047134 9.19468986,0.149577167 10.6188094,3 Z M3.81434537,7.74451588 C2.24232744,8.60008612 1.01426687,10.1298185 0.426764269,12 L13,12 L13,12 C12.3751056,10.0107902 11.0255215,8.40674457 9.30816078,7.58943533 C8.67012021,8.44555415 7.64980899,9 6.5,9 C5.42118935,9 4.45637778,8.51191194 3.81434537,7.74451588 L3.81434537,7.74451588 Z M6.5,8 C7.88071187,8 9,6.88071187 9,5.5 C9,4.11928813 7.88071187,3 6.5,3 C5.11928813,3 4,4.11928813 4,5.5 C4,6.88071187 5.11928813,8 6.5,8 Z"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

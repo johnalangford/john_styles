@@ -1,6 +1,8 @@
 // Typography
-$base-font-family: $helvetica;
-$heading-font-family: $base-font-family;
+$heading-font-family: 'avenir-light';
+$subcopy-font-family: 'frutiger-light';
+$subheading-font-family: 'frutiger-roman';
+$base-font-family: 'frutiger-light';
 
 // Font Sizes
 $base-font-size: 1em;
@@ -16,22 +18,27 @@ $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Colors
-$blue: #477dca;
-$dark-gray: #4a4a4a;
-$light-grey: #CECECE;
-$medium-gray: #999;
-$light-gray: #ddd;
-$error: #FD1068;
+$color-blue: #477dca;
+$color-dark-gray: #4a4a4a;
+$color-light-gray: #CECECE;
+$color-medium-gray: #999;
+$color-error: #FD1068;
+$color-latency: #C2831A;
+$color-success: #1AC295;
 
 // Font Colors
 $base-background-color: #fff;
-$base-font-color: $dark-gray;
-$action-color: $blue;
+$base-font-color: $color-dark-gray;
+$action-color: $color-blue;
 
 // Border
-$base-border-color: $light-gray;
+$base-border-color: $color-light-gray;
 $base-border: 1px solid $base-border-color;
 
 // Forms
-$form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
-$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
+$form-box-shadow: inset -1px 1px 3px rgba(#000, 0.5);
+$form-box-shadow-focus: $form-box-shadow, 0 0 0 adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
+
+.fa-hub:before {
+  content: "\e600";
+}

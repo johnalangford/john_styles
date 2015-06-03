@@ -59,9 +59,6 @@
       <span class="swatch-preview red"></span>
       <ul class="swatch-details">
           <li><strong>Red</strong></li>
-          <li>PMS 193U</li>
-          <li>C13 M94 Y69 K4</li>
-          <li>R204 G39 B62</li>
           <li>#ec212f</li>
           <li>$color-red</li>
       </ul>
@@ -70,33 +67,24 @@
       <span class="swatch-preview error"></span>
       <ul class="swatch-details">
           <li><strong>Error Callout</strong></li>
-          <li>PMS 193U</li>
-          <li>C13 M94 Y69 K4</li>
-          <li>R204 G39 B62</li>
           <li>#fd1068</li>
-          <li>$color-red</li>
+          <li>$color-error</li>
       </ul>
     </li>
     <li class="color-card">
       <span class="swatch-preview success"></span>
       <ul class="swatch-details">
           <li><strong>Success</strong></li>
-          <li>PMS 193U</li>
-          <li>C13 M94 Y69 K4</li>
-          <li>R204 G39 B62</li>
           <li>#1ac295</li>
-          <li>$color-red</li>
+          <li>$color-success</li>
       </ul>
     </li>
     <li class="color-card">
       <span class="swatch-preview failure"></span>
       <ul class="swatch-details">
           <li><strong>Failure</strong></li>
-          <li>PMS 193U</li>
-          <li>C13 M94 Y69 K4</li>
-          <li>R204 G39 B62</li>
           <li>#950dc0</li>
-          <li>$color-red</li>
+          <li>$color-failure</li>
       </ul>
     </li>
   </ul>
@@ -107,9 +95,6 @@
       <span class="swatch-preview"></span>
       <ul class="swatch-details">
           <li><strong>Dark Text</strong></li>
-          <li>PMS 193U</li>
-          <li>C13 M94 Y69 K4</li>
-          <li>R204 G39 B62</li>
           <li>#cf1b41</li>
           <li>$color-red</li>
       </ul>
@@ -118,9 +103,6 @@
       <span class="swatch-preview"></span>
       <ul class="swatch-details">
           <li><strong>Light Text</strong></li>
-          <li>PMS 193U</li>
-          <li>C13 M94 Y69 K4</li>
-          <li>R204 G39 B62</li>
           <li>#cf1b41</li>
           <li>$color-red</li>
       </ul>
@@ -130,15 +112,15 @@
 <hr>
 
 <section>
-  <h2 id="buttons">Buttons</h2>
-  <h3 id="btnBase">Base Button</h3>
+  <h2>Buttons</h2>
+  <h3>Base Button</h3>
   <button>Button</button>
   <hr>
-  <h3 id="btnAlt">Alt Button</h3>
-  <button>Button</button>
+  <h3>Alt Button</h3>
+  <button class="alt">Button</button>
   <hr>
-  <h3 id="btnDisabled">Disabled Button</h3>
-  <button>Button</button>
+  <h3>Disabled Button</h3>
+  <button class="disabled">Button</button>
   <hr>
   <h3 id="txtButton">Text Button</h3>
   <a href="#">Button</a>
@@ -147,28 +129,30 @@
 
 <section>
   <h2 id="inputs">Inputs</h2>
-  <h3 id="txtInput">Text Input</h3>
+  <h3>Text Input</h3>
   <label>Default Label
     <input type="text" id="textField" placeholder="text / password / search / email">
   </label>
 </section>
 <section>
-  <h3 id="txtInputError">Error</h3>
+  <h3>Error</h3>
   <label>Default Label
     <input type="text" id="textField" placeholder="text / password / search / email">
     <div class="form-error">invalid input</div>
   </label>
 </section>
 <section>
-  <h3 id="txtInputValid">Valid</h3>
+  <h3>Valid</h3>
   <label>Default Label
     <input type="text" id="textField" placeholder="text / password / search / email">
-    <i class="glyphicon"></i>
+    <div class="inner-icon">
+      {{fa-icon "fa-check"}}
+    </div>
   </label>
 </section>
 <section>
-  <h3 id="select">Select</h3>
-  <div class="select_element">
+  <h3>Select</h3>
+  <div class="select-style">
     <select>
       <option value="1">Option 1</option>
       <option value="2">Option 2</option>
@@ -178,19 +162,21 @@
   <hr>
 </section>
 <section>
-  <h3 id="select">Select Nested</h3>
-  <select name="select_element">
-    <optgroup label="Option Group 1">
-      <option value="1">Option 1</option>
-      <option value="2">Option 2</option>
-      <option value="3">Option 3</option>
-    </optgroup>
-    <optgroup label="Option Group 2">
-      <option value="1">Option 1</option>
-      <option value="2">Option 2</option>
-      <option value="3">Option 3</option>
-    </optgroup>
-  </select>
+  <h3>Select Nested</h3>
+  <div class="select-style">
+    <select>
+      <optgroup label="Option Group 1">
+        <option value="1"><p>Option 1</p></option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+      </optgroup>
+      <optgroup label="Option Group 2">
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+      </optgroup>
+    </select>
+  </div>
   <hr>
 </section>
 <section>
@@ -215,11 +201,18 @@
   <h2 id="images">Images</h2>
 </section>
 <section>
-  <h3 id="logo">Logo</h3>
+  <h3>Logo</h3>
+  <img class="logo" src="assets/images/iconectiv_tm_rgb.png">
   <hr>
 </section>
 <section>
-  <h3 id="icons">Icons</h3>
+  <h3>Icons</h3>
+  <p>Customer</p>
+  <div class="icon-customer"></div>
+  <p>Hub</p>
+  <div class="icon-hub"></div>
+  <p>Operator</p>
+  <div class="icon-operator"></div>
   <hr>
 </section>
 <section>
@@ -272,7 +265,9 @@
   <div class="search">
     <label>Default Label
       <input type="text" id="textField" placeholder="text / password / search / email">
-      <button>{{fa-icon "fa-search"}}</button>
+      <div class="inner-icon">
+        <button>{{fa-icon "fa-search"}}</button>
+      </div>
     </label>
   </div>
   <hr>
@@ -281,9 +276,23 @@
   <h3 id="filterSet">Filter Set</h3>
   <hr>
 </section>
+
 <section>
-  <h3 id="login">Login</h3>
-  <hr>
+  <h3>Login</h3>
+  <div class="login">
+    <div class="username">
+      <label>
+        <input type="text" id="textField" placeholder="username">
+      </label>
+    </div>
+    <div class="pass">
+      <label>
+        <input type="text" id="textField" placeholder="password">
+      </label>
+    </div>
+    <button>Login</button>
+  </div>
+
 </section>
 
 <section>
@@ -326,6 +335,7 @@
   <hr>
 </section>
 
+<!-- ENTITY -->
 <section>
   <h2>Entity</h2>
 </section>
@@ -339,11 +349,41 @@
 </section>
 <section>
   <h3>Entity W Error</h3>
-  <div class="entity-error">
-    <h1>12345</h1>
+  <div class="entity">
+    <h1><span class="has-error">12345</span></h1>
     <h4>22,000,000 msgs</h4>
   </div>
   <hr>
 </section>
+
+<!-- ELAPSED TIME -->
+<section>
+  <h2>Elapsed Time</h2>
+</section>
+<section>
+  <h3>Customer Time</h3>
+  <div class="customer-time">
+    <img class="customer" src="assets/images/customer.svg">
+    <p>0:0:0</p>
+  </div>
+  <hr>
+</section>
+<section>
+  <h3>Hub Time</h3>
+  <div class="hub-time">
+    <img class="hub" src="assets/images/hub.svg">
+    <p>0:0:0</p>
+  </div>
+  <hr>
+</section>
+<section>
+  <h3>Operator Time</h3>
+  <div class="operator-time">
+    <img class="operator" src="assets/images/operator.svg">
+    <p><span class="has-error">0:0:0</span></p>
+  </div>
+  <hr>
+</section>
+
 
 {{outlet}}

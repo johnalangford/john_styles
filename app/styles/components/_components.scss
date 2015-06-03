@@ -1,6 +1,44 @@
+body {
+  background-color: $color-light-gray;
+}
+
+// COLORS //
+.has-error {
+  color: $color-error;
+}
+
+
+// ATOMS //
+
+// ---- FORMS ---- //
+
+// SEARCH //
+
+// SEARCH ERROR //
+
+
+// SEARCH - VALID //
+.inner-icon{
+  position: relative;
+  left: 100%;
+  margin: 0 0 0 -45px;
+  z-index: 5;
+  top: -45px;
+  color: $color-success;
+}
+
+// ---- IMAGES ---- //
+
+// LOGO //
+
+
+
 // COMPONENTS //
-// FORMS //
-.search button{
+
+// ---- FORMS ---- //
+
+// SEARCH //
+.search .inner-icon{
   position: relative;
   left: 100%;
   margin: 0 0 0 -60px;
@@ -8,13 +46,59 @@
   top: -55px;
 }
 
-// NOTIFICATIONS //
+// LOGIN //
+.login {
+  button {
+    @include span-columns(4);
+    @include shift(4);
+  }
+}
 
+// SELECT //
+.select-style {
+    -moz-box-shadow:    1px 1px 2px 0px rgba(#000, 0.3);
+    -webkit-box-shadow: 1px 1px 2px 0px rgba(#000, 0.3);
+    box-shadow:         1px 1px 2px 0px rgba(#000, 0.3);
+    padding: 25px;
+    margin: 0;
+    //border: 1px solid #ccc;
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: #fff;
+    background: #fff url("http://www.scottgood.com/jsg/blog.nsf/images/arrowdown.gif") no-repeat 95% 50%;
+    transition: all 0.3s ease 0;
+}
+.select-style:hover {
+  background-color: $action-color;
+}
+.select-style select {
+  color: $color-dark-gray;
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}
+.select-style:hover select {
+  color: white;
+}
+
+.select-style select:focus {
+    outline: none;
+
+}
+
+// ---- NOTIFICATIONS ---- //
+
+// NO ISSUE //
 .square-notification {
   width: 70px;
   background-color: white;
   border-radius: $base-border-radius * 2;
-  border: 1px solid $light-gray;
+  border: 1px solid $color-light-gray;
   color: $base-font-color;
   text-align: center;
   padding: $small-spacing / 3;
@@ -26,9 +110,10 @@
   }
 }
 
+// ISSUE //
 .square-notification-issue {
   width: 70px;
-  background-color: $error;
+  background-color: $color-error;
   border-radius: $base-border-radius * 2;
   color: white;
   text-align: center;
@@ -41,17 +126,63 @@
   }
 }
 
-// ENTITY //
+// ---- ENTITIES ---- //
 .entity {
   h1, h2 {
     margin-bottom: 0 !important;
   }
 }
-.entity-error {
-  h1, h2 {
-    margin-bottom: 0 !important;
+
+
+// ELAPSED TIME //
+
+// HUB //
+.icon-hub {
+  font-size: 30px;
+}
+
+// CUSTOMER //
+.icon-customer {
+  font-size: 23px;
+}
+// OPERATOR //
+.icon-operator {
+  font-size: 30px;
+}
+
+// OPERATOR TIME //
+.operator-time {
+  .icon-operator {
+    font-size: 30px;
   }
-  h1 {
-    color: $error;
+  p {
+    display: inline;
+    padding-left: 5px;
+  }
+}
+
+// HUB TIME //
+.hub-time {
+  color: $color-latency;
+  .hub {
+    width: 20px;
+    display: inline;
+  }
+  p {
+    display: inline;
+    padding-left: 5px;
+  }
+}
+
+// CUSTOMER TIME //
+.customer-time {
+  color: $color-latency;
+  .customer {
+    width: 20px;
+    display: inline;
+  }
+  p {
+    display: inline;
+    padding-left: 5px;
   }
 }

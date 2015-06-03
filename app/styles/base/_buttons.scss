@@ -17,6 +17,8 @@ button {
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
+  transition: all 0.3s ease 0s;
+  
 
   &:hover,
   &:focus {
@@ -28,4 +30,18 @@ button {
     cursor: not-allowed;
     opacity: 0.5;
   }
+}
+button.alt {
+    background-color: transparent;
+    border: 1px solid $action-color;
+    color: $action-color;
+    &:hover,
+    &:focus {
+      background-color: darken($action-color, 15%);
+      color: #fff;
+    }
+}
+button.disabled {
+    background-color: $color-light-gray;
+    color: $color-dark-gray * 2;
 }

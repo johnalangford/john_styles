@@ -1,6 +1,7 @@
 section {
   padding: 0 2em 1em 2em;
   @include outer-container;
+  
   h2:first-child {
     color: #cf1b41;
   }
@@ -47,10 +48,10 @@ margin: 0 0.8em 0.5em 0;
   background-color: #EC212F;
 }
 .error {
-  background-color: $error;
+  background-color: $color-error;
 }
 .success {
-  background-color: #1AC295;
+  background-color: $color-success;
 }
 .failure {
   background-color: #950DC0;
