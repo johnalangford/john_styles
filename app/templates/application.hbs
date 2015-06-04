@@ -60,31 +60,31 @@
       <ul class="swatch-details">
           <li><strong>Red</strong></li>
           <li>#ec212f</li>
-          <li>$color-red</li>
+          <li>$red</li>
       </ul>
     </li>
     <li class="color-card">
-      <span class="swatch-preview error"></span>
+      <span class="swatch-preview has-error"></span>
       <ul class="swatch-details">
-          <li><strong>Error Callout</strong></li>
+          <li><strong>Error</strong></li>
           <li>#fd1068</li>
-          <li>$color-error</li>
+          <li>$has-error</li>
       </ul>
     </li>
     <li class="color-card">
-      <span class="swatch-preview success"></span>
+      <span class="swatch-preview has-success"></span>
       <ul class="swatch-details">
           <li><strong>Success</strong></li>
           <li>#1ac295</li>
-          <li>$color-success</li>
+          <li>$has-success</li>
       </ul>
     </li>
     <li class="color-card">
-      <span class="swatch-preview failure"></span>
+      <span class="swatch-preview has-latency"></span>
       <ul class="swatch-details">
-          <li><strong>Failure</strong></li>
-          <li>#950dc0</li>
-          <li>$color-failure</li>
+          <li><strong>Latency</strong></li>
+          <li>#C2831A</li>
+          <li>$has-latency</li>
       </ul>
     </li>
   </ul>
@@ -136,18 +136,18 @@
 </section>
 <section>
   <h3>Error</h3>
-  <label>Default Label
+  <label class="form-error">Default Label
     <input type="text" id="textField" placeholder="text / password / search / email">
-    <div class="form-error">invalid input</div>
+    <p>invalid input</p>
   </label>
 </section>
 <section>
   <h3>Valid</h3>
   <label>Default Label
     <input type="text" id="textField" placeholder="text / password / search / email">
-    <div class="inner-icon">
+    <!--<div class="inner-icon">
       {{fa-icon "fa-check"}}
-    </div>
+    </div>-->
   </label>
 </section>
 <section>
@@ -265,9 +265,9 @@
   <div class="search">
     <label>Default Label
       <input type="text" id="textField" placeholder="text / password / search / email">
-      <div class="inner-icon">
+      <!--<div class="inner-icon">
         <button>{{fa-icon "fa-search"}}</button>
-      </div>
+      </div>-->
     </label>
   </div>
   <hr>

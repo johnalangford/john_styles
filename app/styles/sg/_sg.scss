@@ -1,27 +1,32 @@
 section {
-  padding: 0 2em 1em 2em;
+  @include media($small-screen-up){
+    padding: 0;
+  }
+  @include media($large-screen-up){
+    padding: 0 2em 1em 2em;
+  }
   @include outer-container;
-  
+
   h2:first-child {
     color: #cf1b41;
   }
-  .color-card {
-    @include span-columns(3);
+  @include media($small-screen-up){
+    .color-card {
+      @include span-columns(6 of 6);
+    }
   }
+  @include media($large-screen-up){
+    .color-card {
+      @include span-columns(3 of 12);
+    }
+  }
+
 }
 
 .color-box {
   height: 100px;
 }
-.pink {
-  background-color: pink;
-}
-.success {
-  background-color: green;
-}
-.failure {
-  background-color: red;
-}
+
 .dark-text {
   background-color: green;
 }
@@ -43,16 +48,4 @@ margin: 0 0.8em 0.5em 0;
 }
 .swatch-details {
   padding: 0 0 1em 1em;
-}
-.red {
-  background-color: #EC212F;
-}
-.error {
-  background-color: $color-error;
-}
-.success {
-  background-color: $color-success;
-}
-.failure {
-  background-color: #950DC0;
 }
