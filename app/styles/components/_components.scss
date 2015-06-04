@@ -42,11 +42,13 @@ body {
 // SEARCH - VALID //
 .inner-icon{
   position: relative;
-  left: 100%;
-  margin: 0 0 0 -45px;
-  z-index: 5;
-  top: -45px;
-  color: $color-success;
+  i {
+    position: absolute;
+    right: 1em;
+    z-index: 5;
+    top: -45px;
+    color: $color-success;
+  }
 }
 
 // ---- IMAGES ---- //
@@ -60,12 +62,16 @@ body {
 // ---- FORMS ---- //
 
 // SEARCH //
-.search .inner-icon{
+.inner-icon-button{
   position: relative;
-  left: 100%;
-  margin: 0 0 0 -60px;
-  z-index: 5;
-  top: -55px;
+  button {
+    position: absolute;
+    right: 1em;
+    z-index: 5;
+    top: -55px;
+    color: white;
+    margin: 0;
+  }
 }
 
 // LOGIN //

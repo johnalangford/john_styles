@@ -72,7 +72,7 @@ input[type="file"] {
 }
 
 label.form-error input[type="text"]{
-  border: 1px solid $color-error !important;
+  border: 1px solid $color-error;
   box-shadow: none;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -85,4 +85,9 @@ label.form-error input[type="text"]{
   color: white;
   padding: 3px 0 3px 10px;
   background-color: $color-error;
+}
+
+label.form-valid input[type="text"]{
+  border: 1px solid $color-success;
+  box-shadow: none;
 }
