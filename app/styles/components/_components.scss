@@ -83,6 +83,12 @@ body {
 }
 
 // SELECT //
+.select-style:after {
+  font-family: 'FontAwesome';
+  content: "\f0d7";
+  float: right;
+}
+
 .select-style {
     -moz-box-shadow:    1px 1px 2px 0px rgba(#000, 0.3);
     -webkit-box-shadow: 1px 1px 2px 0px rgba(#000, 0.3);
@@ -93,22 +99,24 @@ body {
     border-radius: 3px;
     overflow: hidden;
     background-color: #fff;
-    background: #fff url("http://www.scottgood.com/jsg/blog.nsf/images/arrowdown.gif") no-repeat 95% 50%;
     transition: all 0.3s ease 0;
+
 }
 .select-style:hover {
   background-color: $action-color;
+  color: white;
 }
 .select-style select {
   color: $color-dark-gray;
-    width: 100%;
-    border: none;
-    box-shadow: none;
-    background-color: transparent;
-    background-image: none;
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
+  display:inline;
+  //width: 100%;
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+  background-image: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 .select-style:hover select {
   color: white;
@@ -203,13 +211,9 @@ body {
 
 // CUSTOMER TIME //
 .customer-time {
-  color: $color-latency;
-  .customer {
-    width: 20px;
-    display: inline;
-  }
   p {
-    display: inline;
+    font-size: $base-font-size;
     padding-left: 5px;
   }
+
 }
