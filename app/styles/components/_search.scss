@@ -1,0 +1,11 @@
+.inner-icon-button{
+  position: relative;
+  button {
+    position: absolute;
+    right: 1em;
+    z-index: 5;
+    top: -55px;
+    color: white;
+    margin: 0;
+  }
+}

@@ -1,0 +1,12 @@
+.filter-set {
+  .search {
+    @include media($small-screen-up){
+      @include span-columns(4 of 6);
+    }
+  }
+  .select-style {
+    @include media($small-screen-up){
+      @include span-columns(2 of 6);
+    }
+  }
+}

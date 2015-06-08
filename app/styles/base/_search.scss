@@ -1,0 +1,10 @@
+.inner-icon{
+  position: relative;
+  i {
+    position: absolute;
+    right: 1em;
+    z-index: 5;
+    top: -45px;
+    color: $color-success;
+  }
+}

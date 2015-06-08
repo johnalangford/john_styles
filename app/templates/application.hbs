@@ -207,12 +207,9 @@
 </section>
 <section>
   <h3>Icons</h3>
-  <p>Customer</p>
-  <div class="icon-customer"></div>
-  <p>Hub</p>
-  <div class="icon-hub"></div>
-  <p>Operator</p>
-  <div class="icon-operator"></div>
+  <div class="icon-customer"><p>Customer</p></div>
+  <div class="icon-hub"><p>Hub</p></div>
+  <div class="icon-operator"><p>Operator</p></div>
   <hr>
 </section>
 <section>
@@ -262,20 +259,15 @@
 </section>
 <section>
   <h3 id="search">Search</h3>
-  <div class="search">
-    <label>Default Label
-      <input type="text" id="textField" placeholder="text / password / search / email">
-      <div class="inner-icon-button">
-        <button>{{fa-icon "fa-search"}}</button>
-      </div>
-    </label>
-  </div>
+  {{partial "partials/search"}}
   <hr>
 </section>
 <section>
   <h3 id="filterSet">Filter Set</h3>
+  {{partial "partials/filter-set"}}
   <hr>
 </section>
+
 
 <section>
   <h3>Login</h3>
@@ -358,29 +350,29 @@
 
 <!-- ELAPSED TIME -->
 <section>
-  <h2>Elapsed Time</h2>
+  <h2>Elapsed Time (Latency)</h2>
 </section>
 <section>
-  <h3>Customer Time</h3>
-  <div class="customer-time text-has-latency">
+  <h3>Latency Customer</h3>
+  <div class="latency-time text-has-latency">
     <div class="icon-customer"><p>0:0:0</p></div>
 
   </div>
   <hr>
 </section>
 <section>
-  <h3>Hub Time</h3>
-  <div class="hub-time text-has-latency">
-    <div class="icon-hub"></div>
-    <p>0:0:0</p>
+  <h3>Latency Hub</h3>
+  <div class="latency-time text-has-latency">
+    <div class="icon-hub"><p>0:0:0</p></div>
+
   </div>
   <hr>
 </section>
 <section>
-  <h3>Operator Time</h3>
-  <div class="operator-time text-has-error">
-    <div class="icon-operator"></div>
-    <p>0:0:0</p>
+  <h3>Latency Operator</h3>
+  <div class="latency-time text-has-error">
+    <div class="icon-operator"><p>0:0:0</p></div>
+
   </div>
   <hr>
 </section>
