@@ -46,17 +46,17 @@ button.disabled {
 }
 
 // SELECT //
-.select-style:after {
+.dropdown:after {
   font-family: 'FontAwesome';
   content: "\f0d7";
   float: right;
 }
 
-.select-style {
+.dropdown {
     -moz-box-shadow:    1px 1px 2px 0px rgba(#000, 0.3);
     -webkit-box-shadow: 1px 1px 2px 0px rgba(#000, 0.3);
     box-shadow:         1px 1px 2px 0px rgba(#000, 0.3);
-    padding: 25px;
+    padding: 20px 10px 20px 2px;
     margin: 0;
     //border: 1px solid #ccc;
     border-radius: 3px;
@@ -65,14 +65,14 @@ button.disabled {
     transition: all 0.3s ease 0;
 
 }
-.select-style:hover {
+.dropdown:hover {
   background-color: $action-color;
   color: white;
 }
-.select-style select {
+.dropdown select {
   color: $color-dark-gray;
   display:inline;
-  width: 90%;
+  //width: 90%;
   border: none;
   box-shadow: none;
   background-color: transparent;
@@ -81,10 +81,10 @@ button.disabled {
      -moz-appearance: none;
           appearance: none;
 }
-.select-style:hover select {
+.dropdown:hover select {
   color: white;
 }
 
-.select-style select:focus {
+.dropdown select:focus {
     outline: none;
 }

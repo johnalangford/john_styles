@@ -3,10 +3,24 @@
     @include media($small-screen-up){
       @include span-columns(4 of 6);
     }
+    @include media($large-screen-up){
+      @include span-columns(4 of 12);
+    }
   }
-  .select-style {
+  .dropdown {
     @include media($small-screen-up){
       @include span-columns(2 of 6);
     }
+    @include media($large-screen-up){
+      @include span-columns(2 of 12);
+    }
+  }
+}
+.hidden-small {
+  @include media($small-screen-up){
+    display: none !important;
+  }
+  @include media($large-screen-up){
+    display: block !important;
   }
 }
