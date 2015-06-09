@@ -51,6 +51,12 @@ $color-success: #1AC295;
 .has-latency {
   background-color: $color-latency;
 }
+.text-dark {
+  background-color: $color-dark-gray;
+}
+.text-light {
+  background-color: $color-light-gray;
+}
 
 // Font Colors
 $base-background-color: #fff;
