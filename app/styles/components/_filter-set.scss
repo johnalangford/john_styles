@@ -10,6 +10,7 @@
   .dropdown {
     @include media($small-screen-up){
       @include span-columns(2 of 6);
+      @include omega();
     }
     @include media($large-screen-up){
       @include span-columns(2 of 12);
