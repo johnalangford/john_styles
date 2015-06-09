@@ -1,12 +1,15 @@
 .wrapper {
   @include outer-container;
 }
-.nav {
+.left {
   height: 9000px;
   padding: 0 0 0 30px;
   @include media($large-screen-up){
     @include span-columns(2 of 12);
   }
+}
+.nav {
+  position: fixed;
 }
 section {
   @include media($large-screen-up){
@@ -24,6 +27,7 @@ section {
     color: #cf1b41;
     padding-bottom: 10px;
     border-bottom: 1px solid $color-red;
+    margin-top: 40px;
   }
   @include media($small-screen-up){
     .color-card {
