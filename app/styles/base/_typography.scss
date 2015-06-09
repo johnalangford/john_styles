@@ -92,7 +92,9 @@ p {
   margin: 0 0 $small-spacing;
   font-family: $base-font-family;
 }
-
+.title {
+	font-family: 'avenir-light';
+}
 a {
   color: $action-color;
   text-decoration: none;
