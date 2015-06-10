@@ -20,12 +20,12 @@ $base-z-index: 0;
 // Colors
 $color-red: #EC212F;
 $color-blue: #477dca;
-$color-dark-gray: #4a4a4a;
-$color-light-gray: #CECECE;
+$color-dark-gray: #505050;
+$color-light-gray: #B4BBBF;
 $color-medium-gray: #999;
 $color-error: #FD1068;
-$color-latency: #C2831A;
-$color-success: #1AC295;
+$color-latency: #F7941E;
+$color-success: #4B9468;
 
 .text-has-error {
   color: $color-error;
@@ -50,6 +50,12 @@ $color-success: #1AC295;
 }
 .has-latency {
   background-color: $color-latency;
+}
+.text-dark {
+  background-color: $color-dark-gray;
+}
+.text-light {
+  background-color: $color-light-gray;
 }
 
 // Font Colors

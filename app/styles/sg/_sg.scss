@@ -1,14 +1,31 @@
+.wrapper {
+  @include outer-container;
+}
+.left {
+  height: 10000px;
+  padding: 0 0 0 20px;
+  @include media($large-screen-up) {
+    @include span-columns(2 of 12);
+  }
+}
+.nav {
+  position: fixed;
+}
 section {
-  @include media($small-screen-up){
+  @include media($large-screen-up) {
+    @include span-columns(10 of 12);
+    @include omega();
+    padding-right: 20px !important;
+  }
+  @include media($small-screen-up) {
     padding: 0;
   }
-  @include media($large-screen-up){
-    padding: 0 2em 1em 2em;
-  }
-  @include outer-container;
 
   h2:first-child {
     color: #cf1b41;
+    padding-bottom: 10px;
+    border-bottom: 1px solid $color-red;
+    margin-top: 40px;
   }
   @include media($small-screen-up){
     .color-card {
@@ -35,16 +52,15 @@ section {
 }
 
 .color-card {
-  box-shadow: 0 0 1px rgba(0,0,0,0.4);
+  border: 1px solid rgba(0,0,0,0.1);
+  margin-bottom: 20px;
 }
 .swatch-preview {
-border-top: 1px solid rgba(0,0,0,0.1);
-border-bottom: 1px solid rgba(0,0,0,0.1);
-display: block;
-float: left;
-height: 60px;
-width: 100%;
-margin: 0 0.8em 0.5em 0;
+  display: block;
+  float: left;
+  height: 60px;
+  width: 100%;
+  margin: 0 0.8em 0.5em 0;
 }
 .swatch-details {
   padding: 0 0 1em 1em;

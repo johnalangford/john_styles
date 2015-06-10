@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="59px" height="61px" viewBox="0 0 59 61" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>success rate copy 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop---dash" sketch:type="MSArtboardGroup" transform="translate(-237.000000, -150.000000)">
+            <g id="CARDS" sketch:type="MSLayerGroup" transform="translate(43.000000, 141.000000)">
+                <g id="card-1">
+                    <g id="success-rate-copy-2" transform="translate(196.000000, 11.000000)">
+                        <text id="&gt;-3:00" sketch:type="MSTextLayer" font-family="Gibson" font-size="10" font-weight="normal" sketch:alignment="middle" line-spacing="8" fill="#C2841A">
+                            <tspan x="8.67611111" y="42.1111111">&gt; 3:00</tspan>
+                        </text>
+                        <text id="40%" sketch:type="MSTextLayer" font-family="Gibson" font-size="24" font-weight="526" fill="#C2841A">
+                            <tspan x="8.55555556" y="30.5555556">40</tspan>
+                            <tspan x="38.6035556" y="30.5555556" font-size="14">%</tspan>
+                        </text>
+                        <ellipse id="Oval-5-Copy-3" stroke="#C2841A" stroke-width="2" sketch:type="MSShapeGroup" transform="translate(27.651580, 28.758407) rotate(-180.000000) translate(-27.651580, -28.758407) " cx="27.6515796" cy="28.7584067" rx="27.0325522" ry="27.8707967"></ellipse>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

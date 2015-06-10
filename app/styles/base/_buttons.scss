@@ -1,4 +1,5 @@
 #{$all-button-inputs},
+
 button {
   @include appearance(none);
   -webkit-font-smoothing: antialiased;
@@ -45,13 +46,12 @@ button.disabled {
     color: $color-dark-gray * 2;
 }
 
-// SELECT //
+// DROPDOWN //
 .dropdown:after {
   font-family: 'FontAwesome';
   content: "\f0d7";
   float: right;
 }
-
 .dropdown {
     -moz-box-shadow:    1px 1px 2px 0px rgba(#000, 0.3);
     -webkit-box-shadow: 1px 1px 2px 0px rgba(#000, 0.3);
@@ -87,4 +87,33 @@ button.disabled {
 
 .dropdown select:focus {
     outline: none;
+}
+
+// LINK BUTTON //
+a.button {
+  padding: 0.75em 1em;
+  display: inline-block;
+  font-size: $base-font-size;
+  font-weight: 600;
+  line-height: 1;
+}
+a.button:hover, a.select {
+  @include appearance(none);
+  -webkit-font-smoothing: antialiased;
+  background-color: $action-color;
+  border-radius: $base-border-radius;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.75em 1em;
+  text-decoration: none;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  transition: all 0.3s ease 0s;
 }
