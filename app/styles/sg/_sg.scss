@@ -4,7 +4,7 @@
 .left {
   height: 9000px;
   padding: 0 0 0 30px;
-  @include media($large-screen-up){
+  @include media($large-screen-up) {
     @include span-columns(2 of 12);
   }
 }
@@ -12,15 +12,15 @@
   position: fixed;
 }
 section {
-  @include media($large-screen-up){
+  @include media($large-screen-up) {
     @include span-columns(10 of 12);
     @include omega();
   }
-  @include media($small-screen-up){
+  @include media($small-screen-up) {
     padding: 0;
   }
-  @include media($large-screen-up){
-
+  @include media($large-screen-up) {
+    padding-right: 20px;
   }
 
   h2:first-child {

@@ -1,0 +1,30 @@
+.card {
+  background-color: white;
+  padding: 20px;
+  @include media($large-screen-up){
+    @include span-columns(6 of 12);
+  }
+}
+.card .entity {
+  float: left;
+  h1 {
+    line-height: .6em;
+    padding-top: 15px;
+  }
+}
+.card .square-notification-issue {
+  float: right;
+  margin-left: 10px;
+}
+.card .success-notification img {
+  float: right;
+  width: 90px;
+}
+.card .latency-notification img {
+  width: 90px;
+  float: right;
+}
+.card .chart img {
+  width: 100%;
+  margin-top: 20px;
+}
