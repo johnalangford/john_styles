@@ -2,8 +2,8 @@
   @include outer-container;
 }
 .left {
-  height: 9000px;
-  padding: 0 0 0 30px;
+  height: 10000px;
+  padding: 0 0 0 20px;
   @include media($large-screen-up) {
     @include span-columns(2 of 12);
   }
@@ -15,12 +15,10 @@ section {
   @include media($large-screen-up) {
     @include span-columns(10 of 12);
     @include omega();
+    padding-right: 20px !important;
   }
   @include media($small-screen-up) {
     padding: 0;
-  }
-  @include media($large-screen-up) {
-    padding-right: 20px;
   }
 
   h2:first-child {

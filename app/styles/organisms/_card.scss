@@ -1,6 +1,7 @@
 .card {
   background-color: white;
   padding: 20px;
+  border: 1px solid $color-light-gray;
   @include media($large-screen-up){
     @include span-columns(8 of 12);
   }
