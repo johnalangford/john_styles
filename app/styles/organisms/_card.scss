@@ -2,7 +2,7 @@
   background-color: white;
   padding: 20px;
   @include media($large-screen-up){
-    @include span-columns(6 of 12);
+    @include span-columns(8 of 12);
   }
 }
 .card .entity {

@@ -1,19 +1,20 @@
 .filter-set {
   .search {
-    @include media($small-screen-up){
+    @include media($small-screen-up) {
       @include span-columns(4 of 6);
     }
-    @include media($large-screen-up){
+    @include media($large-screen-up) {
       @include span-columns(4 of 12);
     }
   }
   .dropdown {
-    @include media($small-screen-up){
+    @include media($small-screen-up) {
       @include span-columns(2 of 6);
       @include omega();
     }
-    @include media($large-screen-up){
+    @include media($large-screen-up) {
       @include span-columns(2 of 12);
+        padding: 20px;
     }
   }
 }

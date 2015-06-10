@@ -46,13 +46,12 @@ button.disabled {
     color: $color-dark-gray * 2;
 }
 
-// SELECT //
+// DROPDOWN //
 .dropdown:after {
   font-family: 'FontAwesome';
   content: "\f0d7";
   float: right;
 }
-
 .dropdown {
     -moz-box-shadow:    1px 1px 2px 0px rgba(#000, 0.3);
     -webkit-box-shadow: 1px 1px 2px 0px rgba(#000, 0.3);
@@ -89,6 +88,8 @@ button.disabled {
 .dropdown select:focus {
     outline: none;
 }
+
+// LINK BUTTON //
 a.button {
   padding: 0.75em 1em;
   display: inline-block;
