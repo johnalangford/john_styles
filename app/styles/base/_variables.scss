@@ -27,18 +27,27 @@ $color-error: #FD1068;
 $color-latency: #F7941E;
 $color-success: #4B9468;
 
-.text-has-error {
-  color: $color-error;
-}
-.has-error {
+
+
+div.has-error, span.has-error {
   background-color: $color-error;
+  color: white;
 }
-.text-red {
-  color: $color-red;
+i, p, h1, h2, h3, h4, h5, h6 {
+  &.has-error {
+    color: $color-error;
+  }
 }
-.red {
+div.has-red, span.has-red{
   background-color: $color-red;
+  color: white;
 }
+i, p, h1, h2, h3, h4, h5, h6 {
+  &.has-red {
+    color: $color-red;
+  }
+}
+
 .text-has-success {
   color: $color-success;
 }

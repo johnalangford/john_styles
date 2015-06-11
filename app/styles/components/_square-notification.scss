@@ -13,19 +13,3 @@
     font-size: 15px;
   }
 }
-
-// ISSUE //
-.square-notification-issue {
-  width: 70px;
-  background-color: $color-error;
-  border-radius: $base-border-radius * 2;
-  color: white;
-  text-align: center;
-  padding: $small-spacing / 3;
-  h3, h5 {
-    margin-bottom: 0 !important;
-  }
-  .small-percent {
-    font-size: 15px;
-  }
-}
