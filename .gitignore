@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # compiled output
@@ -15,3 +16,9 @@
 /libpeerconnection.log
 npm-debug.log
 testem.log
+=======
+bower_components/
+dist/
+node_modules/
+tmp/
+>>>>>>> 8f257f31ba4d84ad398e2cf65fcca1204d1e0acf
