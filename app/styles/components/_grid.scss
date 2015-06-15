@@ -1,0 +1,395 @@
+// GRID CLASSES FOR NON SEMANTIC MARKUP
+
+//OPTIONS
+.last {
+  @include omega();
+}
+.hidden-small {
+  @include media($small-screen-up) {
+    display: none !important;
+  }
+  @include media($large-screen-up) {
+    display: block !important;
+  }
+}
+.row {
+  display: block;
+}
+.spacing-small {
+  padding-top: 50px;
+}
+.spacing-medium {
+  padding-top: 75px;
+}
+.spacing-large {
+  padding-top: 100px;
+}
+
+//SMALL GRID OF 6 COLUMNS
+.one {
+  @include media($small-screen-up) {
+    @include span-columns(1);
+  }
+}
+.two-small {
+  @include media($small-screen-up) {
+    @include span-columns(2);
+  }
+}
+.three-small {
+  @include media($small-screen-up) {
+    @include span-columns(3);
+  }
+}
+.four-small {
+  @include media($small-screen-up) {
+    @include span-columns(4);
+  }
+}
+.five-small {
+  @include media($small-screen-up) {
+    @include span-columns(5);
+  }
+}
+.six-small {
+  @include media($small-screen-up) {
+    @include span-columns(6);
+  }
+}
+
+//LARGE GRID OF 12 COLUMNS
+.one-large {
+  @include media($large-screen-up) {
+    @include span-columns(1);
+  }
+}
+.two-large {
+  @include media($large-screen-up) {
+    @include span-columns(2);
+  }
+}
+.three-large {
+  @include media($large-screen-up) {
+    @include span-columns(3);
+  }
+}
+.four-large {
+  @include media($large-screen-up) {
+    @include span-columns(4);
+  }
+}
+.five-large {
+  @include media($large-screen-up) {
+    @include span-columns(5);
+  }
+}
+.six-large {
+  @include media($large-screen-up) {
+    @include span-columns(6 of 12);
+  }
+}
+.seven-large {
+  @include media($large-screen-up) {
+    @include span-columns(7);
+  }
+}
+.eight-large {
+  @include media($large-screen-up) {
+    @include span-columns(8);
+  }
+}
+.nine-large {
+  @include media($large-screen-up) {
+    @include span-columns(9);
+  }
+}
+.ten-large {
+  @include media($large-screen-up) {
+    @include span-columns(10);
+  }
+}
+.eleven-large {
+  @include media($large-screen-up) {
+    @include span-columns(11);
+  }
+}
+.twelve-large {
+  @include media($large-screen-up) {
+    @include span-columns(12);
+  }
+}
+.large {
+  @include media($large-screen-up) {
+    &-1of1 {
+      @include span-columns(1 of 1);
+    }
+    &-1of2 {
+      @include span-columns(1 of 2);
+    }
+    &-2of2 {
+      @include span-columns(2 of 2);
+    }
+    &-1of3 {
+      @include span-columns(1 of 3);
+    }
+    &-2of3 {
+      @include span-columns(2 of 3);
+    }
+    &-3of3 {
+      @include span-columns(3 of 3);
+    }
+    &-1of4 {
+      @include span-columns(1 of 4);
+    }
+    &-2of4 {
+      @include span-columns(2 of 4);
+    }
+    &-3of4 {
+      @include span-columns(3 of 4);
+    }
+    &-4of4 {
+      @include span-columns(4 of 4);
+    }
+    &-1of5 {
+      @include span-columns(1 of 5);
+    }
+    &-2of5 {
+      @include span-columns(2 of 5);
+    }
+    &-3of5 {
+      @include span-columns(3 of 5);
+    }
+    &-4of5 {
+      @include span-columns(4 of 5);
+    }
+    &-5of5 {
+      @include span-columns(5 of 5);
+    }
+    &-1of6 {
+      @include span-columns(1 of 6);
+    }
+    &-2of6 {
+      @include span-columns(2 of 6);
+    }
+    &-3of6 {
+      @include span-columns(3 of 6);
+    }
+    &-4of6 {
+      @include span-columns(4 of 6);
+    }
+    &-5of6 {
+      @include span-columns(5 of 6);
+    }
+    &-6of6 {
+      @include span-columns(6 of 6);
+    }
+    &-1of7 {
+      @include span-columns(1 of 7);
+    }
+    &-2of7 {
+      @include span-columns(2 of 7);
+    }
+    &-3of7 {
+      @include span-columns(3 of 7);
+    }
+    &-4of7 {
+      @include span-columns(4 of 7);
+    }
+    &-5of7 {
+      @include span-columns(5 of 7);
+    }
+    &-6of7 {
+      @include span-columns(6 of 7);
+    }
+    &-7of7 {
+      @include span-columns(7 of 7);
+    }
+    &-1of8 {
+      @include span-columns(1 of 8);
+    }
+    &-2of8 {
+      @include span-columns(2 of 8);
+    }
+    &-3of8 {
+      @include span-columns(3 of 8);
+    }
+    &-4of8 {
+      @include span-columns(4 of 8);
+    }
+    &-5of8 {
+      @include span-columns(5 of 8);
+    }
+    &-6of8 {
+      @include span-columns(6 of 8);
+    }
+    &-7of8 {
+      @include span-columns(7 of 8);
+    }
+    &-8of8 {
+      @include span-columns(8 of 8);
+    }
+    &-1of9 {
+      @include span-columns(1 of 9);
+    }
+    &-2of9 {
+      @include span-columns(2 of 9);
+    }
+    &-3of9 {
+      @include span-columns(3 of 9);
+    }
+    &-4of9 {
+      @include span-columns(4 of 9);
+    }
+    &-5of9 {
+      @include span-columns(5 of 9);
+    }
+    &-6of9 {
+      @include span-columns(6 of 9);
+    }
+    &-7of9 {
+      @include span-columns(7 of 9);
+    }
+    &-8of9 {
+      @include span-columns(8 of 9);
+    }
+    &-9of9 {
+      @include span-columns(9 of 9);
+    }
+    &-1of10 {
+      @include span-columns(1 of 10);
+    }
+    &-2of10 {
+      @include span-columns(2 of 10);
+    }
+    &-3of10 {
+      @include span-columns(3 of 10);
+    }
+    &-4of10 {
+      @include span-columns(4 of 10);
+    }
+    &-5of10 {
+      @include span-columns(5 of 10);
+    }
+    &-6of10 {
+      @include span-columns(6 of 10);
+    }
+    &-7of10 {
+      @include span-columns(7 of 10);
+    }
+    &-8of10 {
+      @include span-columns(8 of 10);
+    }
+    &-9of10 {
+      @include span-columns(9 of 10);
+    }
+    &-10of10 {
+      @include span-columns(9 of 10);
+    }
+    &-1of11 {
+      @include span-columns(1 of 11);
+    }
+    &-2of11 {
+      @include span-columns(2 of 11);
+    }
+    &-3of11 {
+      @include span-columns(3 of 11);
+    }
+    &-4of11 {
+      @include span-columns(4 of 11);
+    }
+    &-5of11 {
+      @include span-columns(5 of 11);
+    }
+    &-6of11 {
+      @include span-columns(6 of 11);
+    }
+    &-7of11 {
+      @include span-columns(7 of 11);
+    }
+    &-8of11 {
+      @include span-columns(8 of 11);
+    }
+    &-9of11 {
+      @include span-columns(9 of 11);
+    }
+    &-10of11 {
+      @include span-columns(9 of 11);
+    }
+    &-10of11 {
+      @include span-columns(9 of 11);
+    }
+    &-1of12 {
+      @include span-columns(1 of 12);
+    }
+    &-2of12 {
+      @include span-columns(2 of 12);
+    }
+    &-3of12 {
+      @include span-columns(3 of 12);
+    }
+    &-4of12 {
+      @include span-columns(4 of 12);
+    }
+    &-5of12 {
+      @include span-columns(5 of 12);
+    }
+    &-6of12 {
+      @include span-columns(6 of 12);
+    }
+    &-7of12 {
+      @include span-columns(7 of 12);
+    }
+    &-8of12 {
+      @include span-columns(8 of 12);
+    }
+    &-9of12 {
+      @include span-columns(9 of 12);
+    }
+    &-10of12 {
+      @include span-columns(9 of 12);
+    }
+    &-10of12 {
+      @include span-columns(9 of 12);
+    }
+    &-10of12 {
+      @include span-columns(9 of 12);
+    }
+  }
+}
+//NINES
+
+.c-2-9 {
+  @include media($large-screen-up) {
+    @include span-columns(2 of 9);
+  }
+}
+.c-3-9 {
+  @include media($large-screen-up) {
+    @include span-columns(3 of 9);
+  }
+}
+.c-4-9 {
+  @include media($large-screen-up) {
+    @include span-columns(4 of 9);
+  }
+}
+.c-5-9 {
+  @include media($large-screen-up) {
+    @include span-columns(5 of 9);
+  }
+}
+.c-6-9 {
+  @include media($large-screen-up) {
+    @include span-columns(6 of 9);
+  }
+}
+.c-7-9 {
+  @include media($large-screen-up) {
+    @include span-columns(7 of 9);
+  }
+}
+.c-8-9 {
+  @include media($large-screen-up) {
+    @include span-columns(8 of 9);
+  }
+}
