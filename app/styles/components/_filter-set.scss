@@ -18,11 +18,3 @@
     }
   }
 }
-.hidden-small {
-  @include media($small-screen-up){
-    display: none !important;
-  }
-  @include media($large-screen-up){
-    display: block !important;
-  }
-}

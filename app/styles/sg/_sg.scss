@@ -3,22 +3,19 @@
 }
 .left {
   height: 10000px;
-  padding: 0 0 0 20px;
-  @include media($large-screen-up) {
-    @include span-columns(2 of 12);
-  }
+  //padding: 0 0 0 20px;
 }
 .nav {
   position: fixed;
 }
 section {
   @include media($large-screen-up) {
-    @include span-columns(10 of 12);
+    //@include span-columns(9 of 12);
     @include omega();
-    padding-right: 20px !important;
+    //padding-right: 20px !important;
   }
   @include media($small-screen-up) {
-    padding: 0;
+    //padding: 0;
   }
 
   h2:first-child {
@@ -27,7 +24,8 @@ section {
     border-bottom: 1px solid $color-red;
     margin-top: 40px;
   }
-  @include media($small-screen-up){
+}
+  /*@include media($small-screen-up){
     .color-card {
       @include span-columns(6 of 6);
     }
@@ -36,9 +34,9 @@ section {
     .color-card {
       @include span-columns(3 of 12);
     }
-  }
+  }*/
 
-}
+
 
 .color-box {
   height: 100px;

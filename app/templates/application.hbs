@@ -1,9 +1,10 @@
 <div class="wrapper">
-  <div class="left hidden-small">
+  <div class="left hidden-small large-3of12">
     <div class="nav">
       <ul>
         <li><a class="button" href="#typography">Typography</a></li>
         <li><a class="button" href="#listtype">List Types</a></li>
+        <li><a class="button" href="#grid">Grid</a></li>
         <li><a class="button" href="#colors">Colors</a></li>
         <li><a class="button" href="#buttons">Buttons</a></li>
         <li><a class="button" href="#inputs">Inputs</a></li>
@@ -17,19 +18,56 @@
       </ul>
     </div>
   </div>
+
+    <!-- GRID -->
+    <h2><a name="grid"></a>Grid</h2>
+    <h4>Three Large</h4>
+    <div class="row">
+      <div class="six-small large-1of12 has-red">
+        <code>large-1of12 slkjf lskjdfsdf</code>
+      </div>
+      <div class="six-small large-2of12 has-red">
+        <code>large-2of12</code>
+      </div>
+      <div class="six-small large-3of12 has-red last">
+        <code>large-3of12</code>
+      </div>
+    </div>
+    <div class="row spacing-small">
+      <div class="six-small large-4of12 has-red">
+        <code>large-4of12</code>
+      </div>
+      <div class="six-small large-5of12 has-red">
+        <code>large-5of12</code>
+      </div>
+    </div>
+    <div class="row spacing-small">
+      <div class="six-small large-9of12 has-red">
+        <div class="large-3of9 has-error">
+          <code>large-3of9</code>
+        </div>
+        <div class="large-3of9 has-error">
+          <code>large-3of9</code>
+        </div>
+        <div class="large-3of9 has-error">
+          <code>large-3of9</code>
+        </div>
+      </div>
+    </div>
+
 <!-- TYPOGRAPHY -->
-<section>
-  <h1 id="sg-main-title">Atoms</h1>
-</section>
-<section>
-  <h2>Typography</h2>
-  <h3>Headings</h3>
-  <h1>h1.Heading</h1>
-  <h2>h2.Heading</h2>
-  <h3>h3.Heading</h3>
-  <h4>h4.Heading</h4>
-  <hr>
-</section>
+  <section>
+    <h1>Atoms</h1>
+  </section>
+  <section>
+    <h2>Typography</h2>
+    <h3>Headings</h3>
+    <h1>h1.Heading</h1>
+    <h2>h2.Heading</h2>
+    <h3>h3.Heading</h3>
+    <h4>h4.Heading</h4>
+    <hr>
+  </section>
 
   <section>
     <h3>Paragraph</h3>
@@ -68,64 +106,65 @@
     <hr>
   </section>
 
-<!-- COLORS -->
-<section>
-  <h2 id="colors">Colors</h2>
-  <ul>
-    <li class="color-card">
-      <span class="swatch-preview has-red"></span>
-      <ul class="swatch-details">
-          <li><strong>Red</strong></li>
-          <li>#ec212f</li>
-          <li>$has-red</li>
-      </ul>
-    </li>
-    <li class="color-card">
-      <span class="swatch-preview has-error"></span>
-      <ul class="swatch-details">
-          <li><strong>Error</strong></li>
-          <li>#fd1068</li>
-          <li>$has-error</li>
-      </ul>
-    </li>
-    <li class="color-card">
-      <span class="swatch-preview has-success"></span>
-      <ul class="swatch-details">
-          <li><strong>Success</strong></li>
-          <li>#1ac295</li>
-          <li>$has-success</li>
-      </ul>
-    </li>
-    <li class="color-card">
-      <span class="swatch-preview has-latency"></span>
-      <ul class="swatch-details">
-          <li><strong>Latency</strong></li>
-          <li>#C2831A</li>
-          <li>$has-latency</li>
-      </ul>
-    </li>
-  </ul>
-</section>
-<section>
-  <ul>
-    <li class="color-card">
-      <span class="swatch-preview"></span>
-      <ul class="swatch-details">
-          <li><strong>Dark Text</strong></li>
-          <li>#cf1b41</li>
-          <li>$color-red</li>
-      </ul>
-    </li>
-    <li class="color-card">
-      <span class="swatch-preview"></span>
-      <ul class="swatch-details">
-          <li><strong>Light Text</strong></li>
-          <li>#cf1b41</li>
-          <li>$color-red</li>
-      </ul>
-    </li>
-  </ul>
-</section>
+
+  <!-- COLORS -->
+  <h2><a name="colors"></a>Colors</h2>
+  <div class="row">
+    <ul>
+      <li class="color-card six-small three-large">
+        <span class="swatch-preview has-red"></span>
+        <ul class="swatch-details">
+            <li><strong>Red</strong></li>
+            <li>#ec212f</li>
+            <li>$has-red</li>
+        </ul>
+      </li>
+      <li class="color-card six-small three-large">
+        <span class="swatch-preview has-error"></span>
+        <ul class="swatch-details">
+            <li><strong>Error</strong></li>
+            <li>#fd1068</li>
+            <li>$has-error</li>
+        </ul>
+      </li>
+      <li class="color-card six-small three-large">
+        <span class="swatch-preview has-success"></span>
+        <ul class="swatch-details">
+            <li><strong>Success</strong></li>
+            <li>#1ac295</li>
+            <li>$has-success</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="row">
+    <ul>
+      <li class="color-card six-small three-large">
+        <span class="swatch-preview has-latency"></span>
+        <ul class="swatch-details">
+            <li><strong>Latency</strong></li>
+            <li>#C2831A</li>
+            <li>$has-latency</li>
+        </ul>
+      </li>
+      <li class="color-card six-small three-large">
+        <span class="swatch-preview"></span>
+        <ul class="swatch-details">
+            <li><strong>Dark Text</strong></li>
+            <li>#cf1b41</li>
+            <li>$color-red</li>
+        </ul>
+      </li>
+      <li class="color-card six-small three-large">
+        <span class="swatch-preview"></span>
+        <ul class="swatch-details">
+            <li><strong>Light Text</strong></li>
+            <li>#cf1b41</li>
+            <li>$color-red</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
 
 
   <section>
