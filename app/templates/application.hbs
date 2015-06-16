@@ -1,5 +1,6 @@
 <div class="wrapper">
-  <div class="left hidden-small large-3of12">
+  <!--NAV-->
+  <div class="left large-3of12 small-hidden">
     <div class="nav">
       <ul>
         <li><a class="button" href="#typography">Typography</a></li>
@@ -18,437 +19,523 @@
       </ul>
     </div>
   </div>
+  <!--END NAV-->
+  <div class="right large-9of12">
+    <!-- TYPOGRAPHY -->
+    <div class="row">
+      <h1>Atoms</h1>
 
+      <h2><a name="typography"></a>Typography</h2>
+      <h3>Headings</h3>
+      <h1>h1.Heading</h1>
+      <h2>h2.Heading</h2>
+      <h3>h3.Heading</h3>
+      <h4>h4.Heading</h4>
+      <hr>
+    </div>
+
+    <div class="row">
+      <h3>Paragraph</h3>
+      <p>Lorem ipsum dolor sit amet, emphasis consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
+      <hr>
+    </div>
+
+    <div class="row">
+      <h4>Bold Text</h4>
+      <b>Lorem ipsum dolor sit</b>
+      <hr>
+      <h4>Small Text</h4>
+      <small>Lorem ipsum dolor sit</small>
+      <hr>
+      <h4>Customer Titles</h4>
+      <h3 class="title">Cricket Communication USA</h3>
+      <h3 class="title text-has-error">Cricket Communication USA (w error)</h3>
+      <hr>
+    </div>
+
+    <div class="row">
+      <h2><a name="listtype"></a>List Types</h2>
+      <h4>Ordered list</h4>
+      <ol>
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+      </ol>
+      <hr>
+      <h4>Unordered list</h4>
+      <ul>
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+      </ul>
+      <hr>
+    </div>
+    <!--END TYPOGRAPHY-->
     <!-- GRID -->
     <h2><a name="grid"></a>Grid</h2>
-    <h4>Three Large</h4>
+    <h4>4 divs</h4>
     <div class="row">
-      <div class="six-small large-1of12 has-red">
-        <code>large-1of12 slkjf lskjdfsdf</code>
-      </div>
-      <div class="six-small large-2of12 has-red">
-        <code>large-2of12</code>
-      </div>
-      <div class="six-small large-3of12 has-red last">
-        <code>large-3of12</code>
-      </div>
+      <div class="large-2of9 has-latency">large 3 of 6, small 6 of 6</div>
+      <div class="large-2of9 has-latency">large 3 of 6, small 6 of 6</div>
+      <div class="large-2of9 has-latency">large 3 of 6, small 6 of 6</div>
+      <div class="large-2of9 has-latency">large 3 of 6, small 6 of 6</div>
     </div>
-    <div class="row spacing-small">
-      <div class="six-small large-4of12 has-red">
-        <code>large-4of12</code>
-      </div>
-      <div class="six-small large-5of12 has-red">
-        <code>large-5of12</code>
-      </div>
+    <h4>3 divs</h4>
+    <div class="row">
+      <div class="large-3of9  small-2of6 has-latency">large 3 of 6, small 6 of 6</div>
+      <div class="large-3of9  small-2of6 has-latency">large 3 of 6, small 6 of 6</div>
+      <div class="large-3of9  small-2of6 has-latency">large 3 of 6, small 6 of 6</div>
     </div>
-    <div class="row spacing-small">
-      <div class="six-small large-9of12 has-red">
-        <div class="large-3of9 has-error">
-          <code>large-3of9</code>
+    <h4 class="spacing-small">2 divs</h4>
+    <div class="row">
+      <div class="large-7of9  small-2of6 has-latency">large 3 of 6, small 6 of 6</div>
+      <div class="large-2of9  small-2of6 has-latency">large 3 of 6, small 6 of 6</div>
+    </div>
+    <!--END GRID-->
+    <!-- COLORS -->
+    <h2><a name="colors"></a>Colors</h2>
+    <!--logos and body text-->
+    <h2>Logos and Body Text</h2>
+    <div class="row">
+      <ul>
+        <li class="color-card large-3of9">
+          <span class="swatch-preview has-red"></span>
+          <ul class="swatch-details">
+              <li><strong>Red</strong></li>
+              <li>R237 G28 B36</li>
+              <li>C0 M100 Y100 K0</li>
+              <li>#ec212f</li>
+              <li>$has-red</li>
+          </ul>
+        </li>
+        <li class="color-card large-3of9">
+          <span class="swatch-preview"></span>
+          <ul class="swatch-details">
+              <li><strong>Dark Text</strong></li>
+              <li>#cf1b41</li>
+              <li>$color-red</li>
+          </ul>
+        </li>
+        <li class="color-card large-3of9">
+          <span class="swatch-preview"></span>
+          <ul class="swatch-details">
+              <li><strong>Light Text</strong></li>
+              <li>#cf1b41</li>
+              <li>$color-red</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!--end logos and body text-->
+    <div class="row">
+      <ul>
+        <li class="color-card large-3of9">
+          <span class="swatch-preview has-red"></span>
+          <ul class="swatch-details">
+              <li><strong>Red</strong></li>
+              <li>#ec212f</li>
+              <li>$has-red</li>
+          </ul>
+        </li>
+        <li class="color-card large-3of9">
+          <span class="swatch-preview has-error"></span>
+          <ul class="swatch-details">
+              <li><strong>Error</strong></li>
+              <li>#fd1068</li>
+              <li>$has-error</li>
+          </ul>
+        </li>
+        <li class="color-card large-3of9">
+          <span class="swatch-preview has-success"></span>
+          <ul class="swatch-details">
+              <li><strong>Success</strong></li>
+              <li>#1ac295</li>
+              <li>$has-success</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="row">
+      <ul>
+        <li class="color-card large-3of9">
+          <span class="swatch-preview has-latency"></span>
+          <ul class="swatch-details">
+              <li><strong>Latency</strong></li>
+              <li>#C2831A</li>
+              <li>$has-latency</li>
+          </ul>
+        </li>
+        <li class="color-card large-3of9">
+          <span class="swatch-preview has-blue"></span>
+          <ul class="swatch-details">
+              <li><strong>Blue</strong></li>
+              <li>#C2831A</li>
+              <li>$has-blue</li>
+          </ul>
+        </li>
+        <li class="color-card large-3of9">
+          <span class="swatch-preview has-lightblue"></span>
+          <ul class="swatch-details">
+              <li><strong>Light Blue</strong></li>
+              <li>#cf1b41</li>
+              <li>$color-lightblue</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="row">
+      <ul>
+        <li class="color-card large-3of9">
+          <span class="swatch-preview"></span>
+          <ul class="swatch-details">
+              <li><strong>Light Text</strong></li>
+              <li>#cf1b41</li>
+              <li>$color-red</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!--END COLORS-->
+    <!--BUTTONS-->
+    <div class="row">
+      <h2><a name="buttons"></a>Buttons</h2>
+      <h3>Base Button</h3>
+      <button>Button</button>
+      <hr>
+      <h3>Alt Button</h3>
+      <button class="alt">Button</button>
+      <hr>
+      <h3>Disabled Button</h3>
+      <button class="disabled">Button</button>
+      <hr>
+      <h3>Text Button</h3>
+      <a class="button" href="#">Button</a>
+      <hr>
+      <h3>Links</h3>
+      <a href="#">Read More</a>
+      <hr>
+    </div>
+
+    <div class="row">
+      <h2><a name="inputs"></a>Inputs</h2>
+      <h3>Text Input</h3>
+      <label>Default Label
+        <input type="text" id="textField" placeholder="text / password / search / email">
+      </label>
+      <hr>
+    </div>
+
+    <div class="row">
+      <h3>Error</h3>
+      <label class="form-error">Default Label
+        <input type="text" id="textField" placeholder="text / password / search / email">
+        <p>invalid username or password</p>
+      </label>
+      <hr>
+    </div>
+
+    <div class="row">
+      <h3>Valid</h3>
+      <label class="form-valid">Default Label
+        <input type="text" id="textField" placeholder="text / password / search / email">
+        <div class="inner-icon">
+          {{fa-icon "fa-check"}}
         </div>
-        <div class="large-3of9 has-error">
-          <code>large-3of9</code>
-        </div>
-        <div class="large-3of9 has-error">
-          <code>large-3of9</code>
-        </div>
-      </div>
+      </label>
+      <hr>
     </div>
 
-<!-- TYPOGRAPHY -->
-  <section>
-    <h1>Atoms</h1>
-  </section>
-  <section>
-    <h2>Typography</h2>
-    <h3>Headings</h3>
-    <h1>h1.Heading</h1>
-    <h2>h2.Heading</h2>
-    <h3>h3.Heading</h3>
-    <h4>h4.Heading</h4>
-    <hr>
-  </section>
-
-  <section>
-    <h3>Paragraph</h3>
-    <p>Lorem ipsum dolor sit amet, emphasis consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
-    <hr>
-  </section>
-
-  <section>
-    <h4>Bold Text</h4>
-    <b>Lorem ipsum dolor sit</b>
-    <hr>
-    <h4>Small Text</h4>
-    <small>Lorem ipsum dolor sit</small>
-    <hr>
-    <h4>Customer Titles</h4>
-    <h3 class="title">Cricket Communication USA</h3>
-    <h3 class="title text-has-error">Cricket Communication USA (w error)</h3>
-    <hr>
-  </section>
-
-  <section>
-    <h2><a name="listtype"></a>List Types</h2>
-    <h4>Ordered list</h4>
-    <ol>
-      <li>List Item 1</li>
-      <li>List Item 2</li>
-      <li>List Item 3</li>
-    </ol>
-    <hr>
-    <h4>Unordered list</h4>
-    <ul>
-      <li>List Item 1</li>
-      <li>List Item 2</li>
-      <li>List Item 3</li>
-    </ul>
-    <hr>
-  </section>
-
-
-  <!-- COLORS -->
-  <h2><a name="colors"></a>Colors</h2>
-  <div class="row">
-    <ul>
-      <li class="color-card six-small three-large">
-        <span class="swatch-preview has-red"></span>
-        <ul class="swatch-details">
-            <li><strong>Red</strong></li>
-            <li>#ec212f</li>
-            <li>$has-red</li>
-        </ul>
-      </li>
-      <li class="color-card six-small three-large">
-        <span class="swatch-preview has-error"></span>
-        <ul class="swatch-details">
-            <li><strong>Error</strong></li>
-            <li>#fd1068</li>
-            <li>$has-error</li>
-        </ul>
-      </li>
-      <li class="color-card six-small three-large">
-        <span class="swatch-preview has-success"></span>
-        <ul class="swatch-details">
-            <li><strong>Success</strong></li>
-            <li>#1ac295</li>
-            <li>$has-success</li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-  <div class="row">
-    <ul>
-      <li class="color-card six-small three-large">
-        <span class="swatch-preview has-latency"></span>
-        <ul class="swatch-details">
-            <li><strong>Latency</strong></li>
-            <li>#C2831A</li>
-            <li>$has-latency</li>
-        </ul>
-      </li>
-      <li class="color-card six-small three-large">
-        <span class="swatch-preview"></span>
-        <ul class="swatch-details">
-            <li><strong>Dark Text</strong></li>
-            <li>#cf1b41</li>
-            <li>$color-red</li>
-        </ul>
-      </li>
-      <li class="color-card six-small three-large">
-        <span class="swatch-preview"></span>
-        <ul class="swatch-details">
-            <li><strong>Light Text</strong></li>
-            <li>#cf1b41</li>
-            <li>$color-red</li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-
-
-  <section>
-    <h2><a name="buttons"></a>Buttons</h2>
-    <h3>Base Button</h3>
-    <button>Button</button>
-    <hr>
-    <h3>Alt Button</h3>
-    <button class="alt">Button</button>
-    <hr>
-    <h3>Disabled Button</h3>
-    <button class="disabled">Button</button>
-    <hr>
-    <h3>Text Button</h3>
-    <a class="button" href="#">Button</a>
-    <hr>
-    <h3>Links</h3>
-    <a href="#">Read More</a>
-    <hr>
-  </section>
-
-  <section>
-    <h2><a name="inputs"></a>Inputs</h2>
-    <h3>Text Input</h3>
-    <label>Default Label
-      <input type="text" id="textField" placeholder="text / password / search / email">
-    </label>
-    <hr>
-  </section>
-  <section>
-    <h3>Error</h3>
-    <label class="form-error">Default Label
-      <input type="text" id="textField" placeholder="text / password / search / email">
-      <p>invalid username or password</p>
-    </label>
-    <hr>
-  </section>
-  <section>
-    <h3>Valid</h3>
-    <label class="form-valid">Default Label
-      <input type="text" id="textField" placeholder="text / password / search / email">
-      <div class="inner-icon">
-        {{fa-icon "fa-check"}}
-      </div>
-    </label>
-    <hr>
-  </section>
-  <section>
-    <h3>Select</h3>
-    <div class="dropdown">
-      <select>
-        <option value="1">Option 1</option>
-        <option value="2">Option 2</option>
-        <option value="3">Option 3</option>
-      </select>
-    </div>
-    <hr>
-  </section>
-  <section>
-    <h3>Select Nested</h3>
-    <div class="dropdown">
-      <select>
-        <optgroup label="Option Group 1">
-          <option value="1"><p>Option 1</p></option>
-          <option value="2">Option 2</option>
-          <option value="3">Option 3</option>
-        </optgroup>
-        <optgroup label="Option Group 2">
+    <div class="row">
+      <h3>Select</h3>
+      <div class="dropdown">
+        <select>
           <option value="1">Option 1</option>
           <option value="2">Option 2</option>
           <option value="3">Option 3</option>
-        </optgroup>
-      </select>
+        </select>
+      </div>
+      <hr>
     </div>
-    <hr>
-  </section>
-  <section>
-    <h3 >Checkbox</h3>
-    <label>
-      <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"> Checkbox 1
-    </label>
-    <hr>
-  </section>
-  <section>
-    <h3>Radio</h3>
-    <label>
-      <input type="radio" class="radio" name="radio_button" value="radio_1"> Radio 1
-    </label>
-    <label>
-      <input type="radio" class="radio" name="radio_button" value="radio_2"> Radio 2
-    </label>
-    <hr>
-  </section>
 
-  <section>
+    <div class="row">
+      <h3>Select Nested</h3>
+      <div class="dropdown">
+        <select>
+          <optgroup label="Option Group 1">
+            <option value="1"><p>Option 1</p></option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+          </optgroup>
+          <optgroup label="Option Group 2">
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+          </optgroup>
+        </select>
+      </div>
+      <hr>
+    </div>
+
+    <div class="row">
+      <h3 >Checkbox</h3>
+      <label>
+        <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"> Checkbox 1
+      </label>
+      <hr>
+    </div>
+
+    <div class="row">
+      <h3>Radio</h3>
+      <label>
+        <input type="radio" class="radio" name="radio_button" value="radio_1"> Radio 1
+      </label>
+      <label>
+        <input type="radio" class="radio" name="radio_button" value="radio_2"> Radio 2
+      </label>
+      <hr>
+    </div>
+    <!--END BUTTONS-->
+    <!--IMAGES-->
     <h2><a name="images"></a>Images</h2>
-  </section>
-  <section>
-    <h3>Logo</h3>
-    <img class="logo" src="assets/images/iconectiv_tm_rgb.png">
-    <hr>
-  </section>
-  <section>
-    <h3>Icons</h3>
-    <div class="icon-customer"><p>Customer</p></div>
-    <div class="icon-hub"><p>Hub</p></div>
-    <div class="icon-operator"><p>Operator</p></div>
-    <hr>
-  </section>
-  <section>
-    <h3 id="loadingGif">loading gif</h3>
-    <hr>
-  </section>
+    <div class="row">
+      <h3>Logo</h3>
+      <img class="logo" src="assets/images/iconectiv_tm_rgb.png">
+      <hr>
+    </div>
 
-  <section>
+    <div class="row">
+      <h3>Icons</h3>
+      <div class="icon-customer"><p>Customer</p></div>
+      <div class="icon-hub"><p>Hub</p></div>
+      <div class="icon-operator"><p>Operator</p></div>
+      <hr>
+    </div>
+
+    <div class="row">
+      <h3 id="loadingGif">loading gif</h3>
+      <hr>
+    </div>
+    <!--END IMAGES-->
+    <!--TIME-->
     <h2><a name="time"></a>Time</h2>
-  </section>
-  <section>
-    <h3>Elapsed Time</h3>
-    <p>0:0:0:0 ( H:M:S )</p>
-    <hr>
-  </section>
-  <section>
-    <h3>Date</h3>
-    <p>Jan 5th, 2015</p>
-    <hr>
-  </section>
-  <section>
-    <h3>Time Military</h3>
-    <p>23:00 ( Military )</p>
-    <hr>
-  </section>
-  <section>
-    <h3>Time Standard</h3>
-    <p>11:00pm ( standard )</p>
-    <hr>
-  </section>
-  <section>
-    <h3>Timezone GMT</h3>
-    <hr>
-  </section>
-  <section>
-    <h3>Total Elapsed Time</h3>
-    <p>0:0:0:0 ( H:M:S )</p>
-    <hr>
-  </section>
+    <div class="row">
+      <h3>Elapsed Time</h3>
+      <p>0:0:0:0 ( H:M:S )</p>
+      <hr>
+    </div>
 
+    <div class="row">
+      <h3>Date</h3>
+      <p>Jan 5th, 2015</p>
+      <hr>
+    </div>
 
-  <section>
+    <div class="row">
+      <h3>Time Military</h3>
+      <p>23:00 ( Military )</p>
+      <hr>
+    </div>
+
+    <div class="row">
+      <h3>Time Standard</h3>
+      <p>11:00pm ( standard )</p>
+      <hr>
+    </div>
+
+    <div class="row">
+      <h3>Timezone GMT</h3>
+      <hr>
+    </div>
+
+    <div class="row">
+      <h3>Total Elapsed Time</h3>
+      <p>0:0:0:0 ( H:M:S )</p>
+      <hr>
+    </div>
+    <!--END TIME-->
     <h1>Components</h1>
-  </section>
-  <section>
+    <!--FORMS-->
     <h2><a name="forms"></a>Forms</h2>
-  </section>
-  <section>
-    <h3>Search</h3>
-    {{partial "partials/search"}}
-    <hr>
-  </section>
-  <section>
-    <h3>Filter Set</h3>
-    {{partial "partials/filter-set"}}
-    <hr>
-  </section>
-  <section>
-    <hr>
-  </section>
-
-  <section>
-    <h3>Login</h3>
-    <div class="login">
-      <div class="username">
-        <label>
-          <input type="text" id="textField" placeholder="username">
-        </label>
-      </div>
-      <div class="pass">
-        <label>
-          <input type="text" id="textField" placeholder="password">
-        </label>
-      </div>
-      <button>Login</button>
+    <div class="row">
+      <h3>Search</h3>
+      {{partial "partials/search"}}
+      <hr>
     </div>
-  </section>
 
-  <section>
+    <div class="row">
+      <h3>Filter Set</h3>
+      {{partial "partials/filter-set"}}
+      <hr>
+    </div>
+
+    <div class="row">
+      <h3>Login</h3>
+      <div class="login">
+        <div class="username">
+          <label>
+            <input type="text" id="textField" placeholder="username">
+          </label>
+        </div>
+        <div class="pass">
+          <label>
+            <input type="text" id="textField" placeholder="password">
+          </label>
+        </div>
+        <button>Login</button>
+      </div>
+    </div>
+    <!--END FORMS-->
+    <!--GRAPHS-->
     <h2><a name="graphs"></a>Graphs</h2>
-  </section>
-
-  <section>
+    <!--END GRAPHS-->
+    <!--NOTIFICATIONS-->
     <h2><a name="notifications"></a>Notifications</h2>
-  </section>
-  <section>
-    <h3>Square</h3>
-    <div class="square-notification">
-      <h3>80<span class="small-percent">%</span></h3>
-      <h5>456-0</h5>
+    <div class="row">
+      <h3>Square</h3>
+      <div class="square-notification">
+        <h3>80<span class="small-percent">%</span></h3>
+        <h5>456-0</h5>
+      </div>
+      <hr>
     </div>
-    <hr>
-  </section>
-  <section>
-    <h3>Square Issue</h3>
-    <div class="square-notification has-error">
-      <h3>80<span class="small-percent">%</span></h3>
-      <h5>456-0</h5>
+
+    <div class="row">
+      <h3>Square Issue</h3>
+      <div class="square-notification has-error">
+        <h3>80<span class="small-percent">%</span></h3>
+        <h5>456-0</h5>
+      </div>
+      <hr>
     </div>
-    <hr>
-  </section>
 
-
-<section>
-    <h3>MO</h3>
-    <div class="square-notification">
+    <div class="row">
       <h3>MO</h3>
-      <h5>{{fa-icon "fa-long-arrow-left"}}</h5>
+      <div class="square-notification">
+        <h3>MO</h3>
+        <h5>{{fa-icon "fa-long-arrow-left"}}</h5>
+      </div>
+      <hr>
     </div>
-    <hr>
-  </section>
-  <section>
-    <h3>MT</h3>
-    <div class="square-notification">
+
+    <div class="row">
       <h3>MT</h3>
-      <h5>{{fa-icon "fa-long-arrow-right"}}</h5>
+      <div class="square-notification">
+        <h3>MT</h3>
+        <h5>{{fa-icon "fa-long-arrow-right"}}</h5>
+      </div>
+      <hr>
     </div>
-    <hr>
-  </section>
+    <!--END NOTIFICATIONS-->
+    <!--GRAPHS-->
+    <h2><a name="graphs"></a>Graphs</h2>
+    <h2><a name="notifications"></a>Notifications</h2>
+    <div class="row">
+      <h3>Square</h3>
+      <div class="square-notification">
+        <h3>80<span class="small-percent">%</span></h3>
+        <h5>456-0</h5>
+      </div>
+      <hr>
+    </div>
 
-  <!-- ENTITY -->
-  <section>
-    <h2><a name="entity"></a>Entity</h2>
-  </section>
-  <section>
-    <h3>Entity</h3>
-    <div class="entity">
-      <h1>12345</h1>
-      <small>22,000,000 msgs</small>
+    <div class="row">
+      <h3>Square Issue</h3>
+      <div class="square-notification has-error">
+        <h3>80<span class="small-percent">%</span></h3>
+        <h5>456-0</h5>
+      </div>
+      <hr>
     </div>
-    <hr>
-  </section>
-  <section>
-    <h3>Entity (W Error)</h3>
-    <div class="entity">
-      <h1><span class="text-has-error">12345</span></h1>
-      <small>22,000,000 msgs</small>
-    </div>
-    <hr>
-  </section>
 
-  <!-- ELAPSED TIME -->
-  <section>
+    <div class="row">
+      <h3>MO</h3>
+      <div class="square-notification">
+        <h3>MO</h3>
+        <h5>{{fa-icon "fa-long-arrow-left"}}</h5>
+      </div>
+      <hr>
+    </div>
+
+    <div class="row">
+      <h3>MT</h3>
+      <div class="square-notification">
+        <h3>MT</h3>
+        <h5>{{fa-icon "fa-long-arrow-right"}}</h5>
+      </div>
+      <hr>
+    </div>
+    <!--END GRAPHS-->
+    <!-- ENTITY -->
+      <h2><a name="entity"></a>Entity</h2>
+    <div class="row">
+      <h3>Entity</h3>
+      <div class="entity">
+        <h1>12345</h1>
+        <small>22,000,000 msgs</small>
+      </div>
+      <hr>
+    </div>
+
+    <div class="row">
+      <h3>Entity (W Error)</h3>
+      <div class="entity">
+        <h1><span class="text-has-error">12345</span></h1>
+        <small>22,000,000 msgs</small>
+      </div>
+      <hr>
+    </div>
+    <!--END ENTITY-->
+    <!-- ELAPSED TIME -->
     <h2><a name="latency"></a>Elapsed Time (Latency)</h2>
-  </section>
-  <section>
-    <h3>Latency Customer</h3>
-    <div class="latency-time text-has-latency">
-      <div class="icon-customer"><p>0:0:0:0</p></div>
+    <div class="row">
+      <h3>Latency Customer</h3>
+      <div class="latency-time text-has-latency">
+        <div class="icon-customer"><p>0:0:0:0</p></div>
+      </div>
+      <hr>
     </div>
-    <hr>
-  </section>
-  <section>
-    <h3>Latency Hub</h3>
-    <div class="latency-time text-has-latency">
-      <div class="icon-hub"><p>0:0:0:0</p></div>
+    <div class="row">
+      <h3>Latency Hub</h3>
+      <div class="latency-time text-has-latency">
+        <div class="icon-hub"><p>0:0:0:0</p></div>
+      </div>
+      <hr>
     </div>
-    <hr>
-  </section>
-  <section>
-    <h3>Latency Operator</h3>
-    <div class="latency-time text-has-error">
-      <div class="icon-operator"><p>0:0:0:0</p></div>
+    <div class="row">
+      <h3>Latency Operator</h3>
+      <div class="latency-time text-has-error">
+        <div class="icon-operator"><p>0:0:0:0</p></div>
+      </div>
+      <hr>
     </div>
-    <hr>
-  </section>
-  <section>
+    <!--END ELPASED TIME-->
     <h1>Organisms</h1>
-  </section>
-  <section>
-    <h2><a name="cards"></a>Card</h2>
-    {{partial "partials/card"}}
-  </section>
-  <section>
-    <h2>Card PN</h2>
-    {{partial "partials/card-pn"}}
-  </section>
+    <!--CARDS-->
+    <div class="row">
+      <h2><a name="cards"></a>Card</h2>
+      {{partial "partials/card"}}
+    </div>
+    <div class="row">
+      <h2>Card PN</h2>
+      {{partial "partials/card-pn"}}
+    </div>
+    <!--END CARDS-->
+  </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--</div>-->
 
 {{outlet}}
