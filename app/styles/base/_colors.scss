@@ -1,0 +1,88 @@
+// has-blue //
+div.has-blue, span.has-blue {
+  background-color: $color-blue;
+  color: white;
+}
+i, p, h1, h2, h3, h4, h5, h6 {
+  &.has-blue {
+    color: $color-blue;
+  }
+}
+// has-light-blue //
+div.has-light-blue, span.has-light-blue {
+  background-color: $color-light-blue;
+  color: white;
+}
+i, p, h1, h2, h3, h4, h5, h6 {
+  &.has-light-blue {
+    color: $color-light-blue;
+  }
+}
+// has-lime-green //
+div.has-lime-green, span.has-lime-green {
+  background-color: $color-lime-green;
+  color: white;
+}
+i, p, h1, h2, h3, h4, h5, h6 {
+  &.has-lime-green {
+    color: $color-lime-green;
+  }
+}
+// has-success //
+div.has-success, span.has-success {
+  background-color: $color-success;
+  color: white;
+}
+i, p, h1, h2, h3, h4, h5, h6 {
+  &.has-success {
+    color: $color-success;
+  }
+}
+// has-error //
+div.has-error, span.has-error {
+  background-color: $color-error;
+  color: white;
+}
+i, p, h1, h2, h3, h4, h5, h6 {
+  &.has-error {
+    color: $color-error;
+  }
+}
+// has-latency //
+div.has-latency, span.has-latency{
+  background-color: $color-latency;
+  color: white;
+}
+i, p, h1, h2, h3, h4, h5, h6 {
+  &.has-latency {
+    color: $color-latency;
+  }
+}
+// has-red //
+div.has-red, span.has-red{
+  background-color: $color-red;
+  color: white;
+}
+i, p, h1, h2, h3, h4, h5, h6 {
+  &.has-red {
+    color: $color-red;
+  }
+}
+// has-dark-gray //
+div.has-dark-gray, span.has-dark-gray{
+  background-color: $color-dark-gray;
+}
+i, p, h1, h2, h3, h4, h5, h6 {
+  &.has-dark-gray {
+    color: $color-dark-gray;
+  }
+}
+// has-light-gray //
+div.has-light-gray, span.has-light-gray{
+  background-color: $color-light-gray;
+}
+i, p, h1, h2, h3, h4, h5, h6 {
+  &.has-light-gray {
+    color: $color-light-gray;
+  }
+}

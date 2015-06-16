@@ -18,8 +18,10 @@ $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Colors
-$color-red: #EC212F;
+$color-red: #ED1C24;
+$color-light-blue: #00AABC;
 $color-blue: #477dca;
+$color-lime-green: #8DC63F;
 $color-dark-gray: #505050;
 $color-light-gray: #B4BBBF;
 $color-medium-gray: #999;
@@ -27,45 +29,11 @@ $color-error: #FD1068;
 $color-latency: #F7941E;
 $color-success: #4B9468;
 
+// weights
+$light: 250;
+$medium: 500;
+$heavy: 700;
 
-
-div.has-error, span.has-error {
-  background-color: $color-error;
-  color: white;
-}
-i, p, h1, h2, h3, h4, h5, h6 {
-  &.has-error {
-    color: $color-error;
-  }
-}
-div.has-red, span.has-red{
-  background-color: $color-red;
-  color: white;
-}
-i, p, h1, h2, h3, h4, h5, h6 {
-  &.has-red {
-    color: $color-red;
-  }
-}
-
-.text-has-success {
-  color: $color-success;
-}
-.has-success {
-  background-color: $color-success;
-}
-.text-has-latency {
-  color: $color-latency;
-}
-.has-latency {
-  background-color: $color-latency;
-}
-.text-dark {
-  background-color: $color-dark-gray;
-}
-.text-light {
-  background-color: $color-light-gray;
-}
 
 // Font Colors
 $base-background-color: #fff;

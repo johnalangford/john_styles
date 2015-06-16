@@ -19,6 +19,7 @@
   display: inline-block;
   width:100%;
 }
+// spacing //
 .spacing-small {
   padding-top: 50px;
 }
@@ -28,6 +29,7 @@
 .spacing-large {
   padding-top: 100px;
 }
+
 
 //SMALL GRID OF 6 COLUMNS
 .one {
@@ -287,7 +289,7 @@
       @include span-columns(9 of 10);
     }
     &-10of10 {
-      @include span-columns(9 of 10);
+      @include span-columns(10 of 10);
     }
     &-1of11 {
       @include span-columns(1 of 11);
@@ -317,10 +319,10 @@
       @include span-columns(9 of 11);
     }
     &-10of11 {
-      @include span-columns(9 of 11);
+      @include span-columns(10 of 11);
     }
-    &-10of11 {
-      @include span-columns(9 of 11);
+    &-11of11 {
+      @include span-columns(11 of 11);
     }
     &-1of12 {
       @include span-columns(1 of 12);
@@ -350,13 +352,13 @@
       @include span-columns(9 of 12);
     }
     &-10of12 {
-      @include span-columns(9 of 12);
+      @include span-columns(10 of 12);
     }
-    &-10of12 {
-      @include span-columns(9 of 12);
+    &-11of12 {
+      @include span-columns(11 of 12);
     }
-    &-10of12 {
-      @include span-columns(9 of 12);
+    &-12of12 {
+      @include span-columns(12 of 12);
     }
   }
 }
@@ -526,7 +528,7 @@
       @include span-columns(9 of 10);
     }
     &-10of10 {
-      @include span-columns(9 of 10);
+      @include span-columns(10 of 10);
     }
     &-1of11 {
       @include span-columns(1 of 11);
@@ -556,10 +558,10 @@
       @include span-columns(9 of 11);
     }
     &-10of11 {
-      @include span-columns(9 of 11);
+      @include span-columns(10 of 11);
     }
-    &-10of11 {
-      @include span-columns(9 of 11);
+    &-11of11 {
+      @include span-columns(1 of 11);
     }
     &-1of12 {
       @include span-columns(1 of 12);
@@ -589,13 +591,13 @@
       @include span-columns(9 of 12);
     }
     &-10of12 {
-      @include span-columns(9 of 12);
+      @include span-columns(10 of 12);
     }
-    &-10of12 {
-      @include span-columns(9 of 12);
+    &-11of12 {
+      @include span-columns(11 of 12);
     }
-    &-10of12 {
-      @include span-columns(9 of 12);
+    &-12of12 {
+      @include span-columns(12 of 12);
     }
   }
 }
