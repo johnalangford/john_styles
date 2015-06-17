@@ -1,6 +1,7 @@
 .wrapper {
   @include outer-container;
 }
+
 .left {
   height: 12500px;
   //padding: 0 0 0 20px;
@@ -8,49 +9,12 @@
 .nav {
   position: fixed;
 }
-section {
-  @include media($large-screen-up) {
-    //@include span-columns(9 of 12);
-    @include omega();
-    //padding-right: 20px !important;
-  }
-  @include media($small-screen-up) {
-    //padding: 0;
-  }
 
-  h2:first-child {
-    color: $color-red;
-    padding-bottom: 10px;
-    border-bottom: 1px solid $color-red;
-    margin-top: 40px;
-  }
-}
-  /*@include media($small-screen-up){
-    .color-card {
-      @include span-columns(6 of 6);
-    }
-  }
-  @include media($large-screen-up){
-    .color-card {
-      @include span-columns(3 of 12);
-    }
-  }*/
-
-
-
-.color-box {
-  height: 100px;
-}
-
-.dark-text {
-  background-color: green;
-}
-.light-text {
-  background-color: red;
-}
 hr.main-title {
   border: 1px solid $color-light-blue;
 }
+
+// HEADER //
 .header {
   height: 100px;
   background-color: $color-light-blue;
@@ -71,6 +35,7 @@ hr.main-title {
     color: white;
   }
 }
+// VIEW CODE //
 .slidingDiv {
 background-color: #FFFFFA;
 padding:20px;

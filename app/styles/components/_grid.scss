@@ -1,10 +1,10 @@
 // GRID CLASSES FOR NON SEMANTIC MARKUP
-
-//OPTIONS
-.last {
-  @include omega();
+.row {
+  display: inline-block;
+  width:100%;
 }
 
+//OPTIONS
 .small-hidden {
   @include media($small-screen-up) {
     display: none !important;
@@ -13,9 +13,16 @@
     display: block !important;
   }
 }
-.row {
-  display: inline-block;
-  width:100%;
+.large-hidden {
+  @include media($large-screen-up) {
+    display: block !important;
+  }
+  @include media($small-screen-up) {
+    display: none !important;
+  }
+}
+.shift-1 {
+  @include shift(1);
 }
 // spacing //
 .spacing-small {
@@ -29,99 +36,7 @@
 }
 
 
-//SMALL GRID OF 6 COLUMNS
-.one {
-  @include media($small-screen-up) {
-    @include span-columns(1);
-  }
-}
-.two-small {
-  @include media($small-screen-up) {
-    @include span-columns(2);
-  }
-}
-.three-small {
-  @include media($small-screen-up) {
-    @include span-columns(3);
-  }
-}
-.four-small {
-  @include media($small-screen-up) {
-    @include span-columns(4);
-  }
-}
-.five-small {
-  @include media($small-screen-up) {
-    @include span-columns(5);
-  }
-}
-.six-small {
-  @include media($small-screen-up) {
-    @include span-columns(6);
-  }
-}
 
-//LARGE GRID OF 12 COLUMNS
-.one-large {
-  @include media($large-screen-up) {
-    @include span-columns(1);
-  }
-}
-.two-large {
-  @include media($large-screen-up) {
-    @include span-columns(2);
-  }
-}
-.three-large {
-  @include media($large-screen-up) {
-    @include span-columns(3);
-  }
-}
-.four-large {
-  @include media($large-screen-up) {
-    @include span-columns(4);
-  }
-}
-.five-large {
-  @include media($large-screen-up) {
-    @include span-columns(5);
-  }
-}
-.six-large {
-  @include media($large-screen-up) {
-    @include span-columns(6 of 12);
-  }
-}
-.seven-large {
-  @include media($large-screen-up) {
-    @include span-columns(7);
-  }
-}
-.eight-large {
-  @include media($large-screen-up) {
-    @include span-columns(8);
-  }
-}
-.nine-large {
-  @include media($large-screen-up) {
-    @include span-columns(9);
-  }
-}
-.ten-large {
-  @include media($large-screen-up) {
-    @include span-columns(10);
-  }
-}
-.eleven-large {
-  @include media($large-screen-up) {
-    @include span-columns(11);
-  }
-}
-.twelve-large {
-  @include media($large-screen-up) {
-    @include span-columns(12);
-  }
-}
 .small {
   @include media($small-screen-up) {
     &-1of1 {
@@ -597,46 +512,5 @@
     &-12of12 {
       @include span-columns(12 of 12);
     }
-  }
-}
-
-
-
-
-//NINES
-
-.c-2-9 {
-  @include media($large-screen-up) {
-    @include span-columns(2 of 9);
-  }
-}
-.c-3-9 {
-  @include media($large-screen-up) {
-    @include span-columns(3 of 9);
-  }
-}
-.c-4-9 {
-  @include media($large-screen-up) {
-    @include span-columns(4 of 9);
-  }
-}
-.c-5-9 {
-  @include media($large-screen-up) {
-    @include span-columns(5 of 9);
-  }
-}
-.c-6-9 {
-  @include media($large-screen-up) {
-    @include span-columns(6 of 9);
-  }
-}
-.c-7-9 {
-  @include media($large-screen-up) {
-    @include span-columns(7 of 9);
-  }
-}
-.c-8-9 {
-  @include media($large-screen-up) {
-    @include span-columns(8 of 9);
   }
 }
