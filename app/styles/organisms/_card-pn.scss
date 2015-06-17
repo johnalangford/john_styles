@@ -1,17 +1,15 @@
 .card-pn {
-  background-color: white;
-  padding: 20px;
-  display: inline-block;
-  width: 100%;
-  border: 1px solid $color-light-gray;
-  @include media($large-screen-up){
-    @include span-columns(8 of 12);
+  @extend .card;
+}
+
+.card-pn .total-time {
+  h4, &h3, &h2, &h1, p {
+    float: left;
+    padding:0;
+    margin:0;
   }
 }
-.card-pn .total-time {
-  float: left;
-}
-.card-pn .middle-bit {
+.card-pn .entity{
   text-align: center;
   width: 100%;
   float: left;
@@ -22,20 +20,19 @@
     padding-top: 15px;
   }
 }
-.card-pn .square-notification {
-  float: right;
-}
 .card-pn .latency-container {
   float: left;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 .card-pn .square-notification {
   float: right;
-  margin-top: 45px;
 }
 .card-pn .latency-time, .card-pn .latency-hub, .card-pn .latency-operator {
   padding-bottom: 10px;
 }
 .card-pn .icon-customer:before {
   font-size: .7em;
+}
+.square-notification.bottom {
+  margin-top: 50px;
 }

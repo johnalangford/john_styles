@@ -2,6 +2,12 @@
 div.has-blue, span.has-blue {
   background-color: $color-blue;
   color: white;
+  &.icon-operator, &.icon-hub, &.icon-customer {
+    background-color: transparent;
+  }
+  &:before {
+    color: $color-blue;
+  }
 }
 i, p, h1, h2, h3, h4, h5, h6 {
   &.has-blue {
@@ -12,6 +18,12 @@ i, p, h1, h2, h3, h4, h5, h6 {
 div.has-light-blue, span.has-light-blue {
   background-color: $color-light-blue;
   color: white;
+  &.icon-operator, &.icon-hub, &.icon-customer {
+    background-color: transparent;
+  }
+  &:before {
+    color: $color-light-blue;
+  }
 }
 i, p, h1, h2, h3, h4, h5, h6 {
   &.has-light-blue {
@@ -22,6 +34,12 @@ i, p, h1, h2, h3, h4, h5, h6 {
 div.has-lime-green, span.has-lime-green {
   background-color: $color-lime-green;
   color: white;
+  &.icon-operator, &.icon-hub, &.icon-customer {
+    background-color: transparent;
+  }
+  &:before {
+    color: $color-lime-green;
+  }
 }
 i, p, h1, h2, h3, h4, h5, h6 {
   &.has-lime-green {
@@ -32,6 +50,13 @@ i, p, h1, h2, h3, h4, h5, h6 {
 div.has-success, span.has-success {
   background-color: $color-success;
   color: white;
+  border: 0;
+  &.icon-operator, &.icon-hub, &.icon-customer {
+    background-color: transparent;
+  }
+  &:before {
+    color: $color-success;
+  }
 }
 i, p, h1, h2, h3, h4, h5, h6 {
   &.has-success {
@@ -42,6 +67,13 @@ i, p, h1, h2, h3, h4, h5, h6 {
 div.has-error, span.has-error {
   background-color: $color-error;
   color: white;
+  border: 0;
+  &.icon-operator, &.icon-hub, &.icon-customer {
+    background-color: transparent;
+  }
+  &:before {
+    color: $color-error;
+  }
 }
 i, p, h1, h2, h3, h4, h5, h6 {
   &.has-error {
@@ -52,6 +84,13 @@ i, p, h1, h2, h3, h4, h5, h6 {
 div.has-latency, span.has-latency{
   background-color: $color-latency;
   color: white;
+  border:0;
+  &.icon-operator, &.icon-hub, &.icon-customer {
+    background-color: transparent;
+  }
+  &:before {
+    color: $color-latency;
+  }
 }
 i, p, h1, h2, h3, h4, h5, h6 {
   &.has-latency {
@@ -62,6 +101,12 @@ i, p, h1, h2, h3, h4, h5, h6 {
 div.has-red, span.has-red{
   background-color: $color-red;
   color: white;
+  &.icon-operator, &.icon-hub, &.icon-customer {
+    background-color: transparent;
+  }
+  &:before {
+    color: $color-red;
+  }
 }
 i, p, h1, h2, h3, h4, h5, h6 {
   &.has-red {

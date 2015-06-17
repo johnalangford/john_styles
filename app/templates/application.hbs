@@ -1,6 +1,26 @@
-<div class="header">
-</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+$(".slidingDiv").hide();
+$(".show_hide").show();
+
+$('.show_hide').click(function(){
+$(".slidingDiv").slideToggle();
+});
+
+});
+
+</script>
+
 <div class="wrapper">
+  <div class="header">
+    <img class="logo" src="assets/images/iconectiv_tm_white.png">
+    <div class="header-blurb">
+      <h1>Style Guide</h1>
+    </div>
+  </div>
   <!--NAV-->
   <div class="left large-2of12 small-hidden">
     <div class="nav spacing-small">
@@ -30,18 +50,60 @@
       <h2 class="has-light-blue"><a name="typography"></a>Typography</h2>
       <hr class=main-title>
       <h4>Headings</h4>
-      <h1>h1.Heading</h1>
-      <h2>h2.Heading</h2>
-      <h3>h3.Heading</h3>
-      <h4>h4.Heading</h4>
-      <hr>
+      <div class="row sg-headings">
+        <div class="large-4of10">
+          <h1>h1.Heading</h1>
+        </div>
+        <div class="large-3of10">
+          <h1 class="has-light-gray">48px</h1>
+        </div>
+        <div class="large-3of10">
+          <h1 class="has-light-gray">light</h1>
+        </div>
+      </div>
+      <div class="row sg-headings">
+        <div class="large-4of10">
+          <h2>h2.Heading</h2>
+        </div>
+        <div class="large-3of10">
+          <h2 class="has-light-gray">32px</h2>
+        </div>
+        <div class="large-3of10">
+          <h2 class="has-light-gray">light</h2>
+        </div>
+      </div>
+      <div class="row sg-headings">
+        <div class="large-4of10">
+          <h3>h3.Heading</h3>
+        </div>
+        <div class="large-3of10">
+          <h3 class="has-light-gray">27px</h3>
+        </div>
+        <div class="large-3of10">
+          <h3 class="has-light-gray">medium</h3>
+        </div>
+      </div>
+      <div class="row sg-headings">
+        <div class="large-4of10">
+          <h4>h4.Heading</h4>
+        </div>
+        <div class="large-3of10">
+          <h4 class="has-light-gray">20px</h4>
+        </div>
+        <div class="large-3of10">
+          <h4 class="has-light-gray">light</h4>
+        </div>
+      </div>
+
     </div>
 
     <div class="row">
       <h4>Paragraph</h4>
-      <p>Lorem ipsum dolor sit amet, emphasis consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
-      <hr>
+        <p class="large-3of10">Lorem ipsum dolor sit amet, emphasis consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
+        <p class="large-4of10 justified">Lorem ipsum dolor sit amet, emphasis consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
+        <p class="large-3of10 justify-right">Lorem ipsum dolor sit amet, emphasis consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
     </div>
+    <hr>
 
     <div class="row">
       <h4>Bold Text</h4>
@@ -76,28 +138,59 @@
     </div>
     <!--END TYPOGRAPHY-->
     <!-- GRID -->
-
     <div class="row spacing-small">
       <h2 class="has-light-blue"><a name="grid"></a>Grid</h2>
       <hr class="main-title">
       <h4>4 divs</h4>
 
-      <div class="large-2of9 has-blue">large-2of9</div>
-      <div class="large-2of9 has-blue">large-2of9</div>
-      <div class="large-2of9 has-blue">large-2of9</div>
-      <div class="large-2of9 has-blue">large-2of9</div>
+      <div class="sg-grid large-2of10 has-blue">large-2of10</div>
+      <div class="sg-grid large-2of10 has-blue">large-2of10</div>
+      <div class="sg-grid large-2of10 has-blue">large-2of10</div>
+      <div class="sg-grid large-2of10 has-blue">large-2of10</div>
     </div>
     <h4>3 divs</h4>
     <div class="row">
-      <div class="large-3of9 has-blue">large-3of9</div>
-      <div class="large-3of9 has-blue">large-3of9</div>
-      <div class="large-3of9 has-blue">large-3of9</div>
+      <div class="sg-grid large-3of10 has-blue">large-3of10</div>
+      <div class="sg-grid large-3of10 has-blue">large-3of10</div>
+      <div class="sg-grid large-3of10 has-blue">large-3of10</div>
     </div>
-    <h4>2 divs (7 & 2)</h4>
+    <h4>2 divs (7 & 3)</h4>
     <div class="row">
-      <div class="large-7of9 small-4of6 has-light-blue">large-7of9 small-4of6</div>
-      <div class="large-2of9 has-blue">large-2of9</div>
+      <div class="sg-grid large-7of10 small-4of6 has-light-blue">large-7of10 / small-4of6</div>
+      <div class="sg-grid large-2of10 has-blue">large-2of10</div>
     </div>
+
+    <div class="row spacing-small">
+      <h4>Examples</h4>
+      <div class="large10of10">
+        <a href="#paragraph1" class="show_hide button">View Code</a>
+        <div class="slidingDiv">
+          &lt;h2&gt;Lorem ipsum dolor sit amet, emphasi&lt;/h2&gt;<br />
+      &lt;div class="large-4of10"&gt;<br />
+        &lt;img src="assets/images/city.png"&gt;<br />
+      &lt;/div&gt;<br />
+      &lt;div class="large-3of10 justified"&gt;<br />
+        &lt;p&gt;Lorem ipsum dolor sit amet, emphasis consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.&lt;/p&gt;<br />
+      &lt;/div&gt;<br />
+      &lt;div class="large-3of10 justified"&gt;<br />
+        &lt;p&gt;Lorem ipsum dolor sit amet, emphasis consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.&lt;/p&gt;<br />
+      &lt;/div&gt;
+        </div>
+      </div>
+
+      <h2>Lorem ipsum dolor sit amet, emphasi</h2>
+      <div class="large-4of10">
+        <img src="assets/images/city.png">
+      </div>
+      <div class="large-3of10 justified">
+        <p>Lorem ipsum dolor sit amet, emphasis consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
+      </div>
+      <div class="large-3of10 justified">
+        <p>Lorem ipsum dolor sit amet, emphasis consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
+      </div>
+    </div>
+
+
     <!--END GRID-->
     <!-- COLORS -->
     <div class="row spacing-small">
@@ -171,28 +264,40 @@
     <div class="row">
       <h4>Application Colors</h4>
       <ul>
-        <li class="color-card large-3of9">
+        <li class="color-card large-2of10">
           <span class="swatch-preview has-error"></span>
           <ul class="swatch-details">
               <li><strong>Error</strong></li>
-              <li>#fd1068</li>
+              <li>R253 G16 B104</li>
+              <li>#FD1068</li>
               <li>$has-error</li>
           </ul>
         </li>
-        <li class="color-card large-3of9">
+        <li class="color-card large-2of10">
           <span class="swatch-preview has-success"></span>
           <ul class="swatch-details">
               <li><strong>Success</strong></li>
-              <li>#1ac295</li>
+              <li>R75 G148 B104</li>
+              <li>#4B9468</li>
               <li>$has-success</li>
           </ul>
         </li>
-        <li class="color-card large-3of9">
+        <li class="color-card large-2of10">
           <span class="swatch-preview has-latency"></span>
           <ul class="swatch-details">
               <li><strong>Latency</strong></li>
-              <li>#C2831A</li>
+              <li>R247 G148 B30</li>
+              <li>#F7941E</li>
               <li>$has-latency</li>
+          </ul>
+        </li>
+        <li class="color-card large-2of10">
+          <span class="swatch-preview has-blue"></span>
+          <ul class="swatch-details">
+              <li><strong>Blue</strong></li>
+              <li>R0 G97 B175</li>
+              <li>#0061AF</li>
+              <li>$has-blue</li>
           </ul>
         </li>
       </ul>
@@ -323,10 +428,21 @@
 
     <div class="row">
       <h4>Icons</h4>
-      <div class="icon-customer"><p>Customer</p></div>
-      <div class="icon-hub"><p>Hub</p></div>
-      <div class="icon-operator"><p>Operator</p></div>
-      <hr>
+      <div class="large-2of10 sg-images">
+        <p>Customer</p>
+        <div class="icon-customer"></div>
+        <p class="heavy">"icon-customer"</p>
+      </div>
+      <div class="large-2of10 sg-images">
+        <p>Hub</p>
+        <div class="icon-hub"></div>
+        <p class="heavy">"icon-hub"</p>
+      </div>
+      <div class="large-2of10 sg-images">
+        <p>Operator</p>
+        <div class="icon-operator"></div>
+        <p class="heavy">"icon-operator"</p>
+      </div>
     </div>
 
     <div class="row spacing-small">
@@ -379,12 +495,70 @@
       <h2 class="has-light-blue"><a name="forms"></a>Forms</h2>
       <hr class="main-title">
       <h4>Search</h4>
+
+      <div class="large10of10">
+        <a href="#searchForm" class="show_hide button">View Code</a>
+        <div class="slidingDiv">
+          &lt;div class="search"&gt;<br />
+          &lt;label&gt;Default Label<br />
+          &lt;input type="text" id="textField" placeholder="text / password / search / email"&gt;<br />
+          &lt;div class="inner-icon-button"&gt;<br />
+          &lt;button&gt;{{fa-icon "fa-search"}}&lt;/button&gt;<br />
+          &lt;/div&gt;<br />
+          &lt;/label&gt;<br />
+          &lt;/div&gt;
+        </div>
+      </div>
+
       {{partial "partials/search"}}
       <hr>
     </div>
 
     <div class="row">
       <h4>Filter Set</h4>
+
+      <div class="large10of10">
+        <a href="#filterSet" class="show_hide button">View Code</a>
+        <div class="slidingDiv">
+          &lt;div class="filter-set"&gt;<br />
+          &lt;div class="search"&gt;<br />
+          &lt;input type="text" id="textField" placeholder="SC, TN"&gt;<br />
+          &lt;div class="inner-icon-button"&gt;<br />
+          &lt;button&gt;{{fa-icon "fa-search"}}&lt;/button&gt;<br />
+          &lt;/div&gt;<br />
+          &lt;/div&gt;<br />
+          &lt;div class="dropdown"&gt;<br />
+          &lt;select&gt;<br />
+          &lt;option value="1"&gt;30 days&lt;/option&gt;<br />
+          &lt;option value="2"&gt;29 days&lt;/option&gt;<br />
+          &lt;option value="3"&gt;5 days&lt;/option&gt;<br />
+          &lt;/select&gt;<br />
+          &lt;/div&gt;<br />
+          &lt;div class="dropdown small-hidden"&gt;<br />
+          &lt;select&gt;<br />
+          &lt;option value="1"&gt;MO / MT&lt;/option&gt;<br />
+          &lt;option value="2"&gt;29 days&lt;/option&gt;<br />
+          &lt;option value="3"&gt;5 days&lt;/option&gt;<br />
+          &lt;/select&gt;<br />
+          &lt;/div&gt;<br />
+          &lt;div class="dropdown small-hidden"&gt;<br />
+          &lt;select&gt;<br />
+          &lt;option value="1"&gt;Time Zone&lt;/option&gt;<br />
+          &lt;option value="2"&gt;EST&lt;/option&gt;<br />
+          &lt;option value="3"&gt;PT&lt;/option&gt;<br />
+          &lt;/select&gt;<br />
+          &lt;/div&gt;<br />
+          &lt;div class="dropdown small-hidden"&gt;<br />
+          &lt;select&gt;<br />
+          &lt;option value="1"&gt;USA&lt;/option&gt;<br />
+          &lt;option value="2"&gt;29 days&lt;/option&gt;<br />
+          &lt;option value="3"&gt;5 days&lt;/option&gt;<br />
+          &lt;/select&gt;<br />
+          &lt;/div&gt;<br />
+          &lt;/div&gt;
+        </div>
+      </div>
+
       {{partial "partials/filter-set"}}
     </div>
 
@@ -413,37 +587,48 @@
     </div>
     <!--END GRAPHS-->
     <!--NOTIFICATIONS-->
-    <div class="row spacing-small">
+    <div class="row spacing-small sg-notifications">
       <h2 class="has-light-blue"><a name="notifications"></a>Notifications</h2>
       <hr class="main-title">
-      <h4>Square</h4>
-      <div class="square-notification">
-        <h3>80<span class="small-percent">%</span></h3>
-        <h5>456-0</h5>
-      </div>
-      <hr>
-    </div>
-    <div class="row">
-      <h4>Square w error</h4>
-      <div class="square-notification has-error">
-        <h3>80<span class="small-percent">%</span></h3>
-        <h5>456-0</h5>
-      </div>
-    </div>
-    <hr>
-    <div class="row ">
-      <h4>MO</h4>
-      <div class="square-notification">
-        <h3>MO</h3>
-        <h5>{{fa-icon "fa-long-arrow-left"}}</h5>
+      <div class="large-4of10">
+        <h4>Square</h4>
+        <div class="square-notification">
+          <h3>80<span class="small-percent">%</span></h3>
+          <h5>456-0</h5>
+        </div>
+        <div class="square-notification has-error">
+          <h3>80<span class="small-percent">%</span></h3>
+          <h5>456-0</h5>
+        </div>
+
       </div>
     </div>
     <hr>
-    <div class="row">
-      <h4>MT</h4>
-      <div class="square-notification">
-        <h3>MT</h3>
-        <h5>{{fa-icon "fa-long-arrow-right"}}</h5>
+    <div class="row sg-notifications">
+      <div class="large-4of10">
+        <h4>MO</h4>
+        <div class="square-notification">
+          <h3>MO</h3>
+          <h5>{{fa-icon "fa-long-arrow-left"}}</h5>
+        </div>
+        <div class="square-notification has-error">
+          <h3>MO</h3>
+          <h5>{{fa-icon "fa-long-arrow-left"}}</h5>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="row sg-notifications">
+      <div class="large-4of10">
+        <h4>MT</h4>
+        <div class="square-notification">
+          <h3>MT</h3>
+          <h5>{{fa-icon "fa-long-arrow-right"}}</h5>
+        </div>
+        <div class="square-notification has-error">
+          <h3>MT</h3>
+          <h5>{{fa-icon "fa-long-arrow-right"}}</h5>
+        </div>
       </div>
     </div>
     <hr>
@@ -457,54 +642,53 @@
         <h1>12345</h1>
         <small>22,000,000 msgs</small>
       </div>
-      <hr>
-    </div>
-
-    <div class="row">
-      <h4>Entity (W Error)</h4>
       <div class="entity">
         <h1 class="has-error">12345</h1>
         <small>22,000,000 msgs</small>
       </div>
-      <hr>
     </div>
+    <hr>
     <!--END ENTITY-->
     <!-- ELAPSED TIME -->
     <div class="row spacing-small">
       <h2 class="has-light-blue"><a name="latency"></a>Elapsed Time (Latency)</h2>
       <hr class="main-title">
       <h4>Latency Customer</h4>
-      <div class="latency-time text-has-latency">
-        <div class="icon-customer"><p>0:0:0:0</p></div>
+      <div class="latency-time">
+        <div class="icon-customer has-latency"><p class="has-latency">0:0:0:0</p></div>
       </div>
       <hr>
     </div>
     <div class="row">
       <h4>Latency Hub</h4>
-      <div class="latency-time text-has-latency">
-        <div class="icon-hub"><p>0:0:0:0</p></div>
+      <div class="latency-time">
+        <div class="icon-hub has-latency"><p class="has-latency">0:0:0:0</p></div>
       </div>
       <hr>
     </div>
     <div class="row">
       <h4>Latency Operator</h4>
-      <div class="latency-time text-has-error">
-        <div class="icon-operator"><p>0:0:0:0</p></div>
+      <div class="latency-time">
+        <div class="icon-operator has-error"><p class=
+          has-error>0:0:0:0</p></div>
       </div>
       <hr>
     </div>
     <!--END ELPASED TIME-->
     <h1 class="spacing-small">Organisms</h1>
     <!--CARDS-->
-    <div class="row">
-      <h2 class="has-light-blue"><a name="cards"></a>Card</h2>
-      <hr class="main-title">
+    <h2 class="has-light-blue"><a name="cards"></a>Card</h2>
+    <hr class="main-title">
+
+    <div class="row large-6of10">
       {{partial "partials/card"}}
     </div>
     <div class="row spacing-small">
       <h2 class="has-light-blue">Card PN</h2>
       <hr class="main-title">
-      {{partial "partials/card-pn"}}
+      <div class="row large-6of10">
+        {{partial "partials/card-pn"}}
+      </div>
     </div>
     <!--END CARDS-->
   </div>

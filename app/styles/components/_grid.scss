@@ -4,9 +4,7 @@
 .last {
   @include omega();
 }
-.shift-2 {
-  @include shift(2);
-}
+
 .small-hidden {
   @include media($small-screen-up) {
     display: none !important;

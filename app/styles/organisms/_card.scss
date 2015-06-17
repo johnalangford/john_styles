@@ -2,15 +2,13 @@
   background-color: white;
   padding: 20px;
   border: 1px solid $color-light-gray;
-  @include media($large-screen-up){
-    @include span-columns(8 of 12);
-  }
 }
 .card .entity {
   float: left;
   h1 {
-    line-height: .6em;
     padding-top: 15px;
+    margin:0;
+    line-height: .6em;
   }
 }
 .card .square-notification {

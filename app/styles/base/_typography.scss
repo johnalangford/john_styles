@@ -62,7 +62,6 @@ body {
 h1,h2,h3,h4,h5,h6 {
   font-size: $base-font-size;
   line-height: $heading-line-height;
-  margin: 0 0 $small-spacing;
 }
 h1 {
 	font-family: $heading-font-family;
@@ -122,7 +121,8 @@ picture {
   max-width: 100%;
 }
 // OPTIONS
-h3.light {
+// weights
+.light {
 	font-weight: $light;
 }
 .medium {
@@ -130,4 +130,11 @@ h3.light {
 }
 .heavy {
 	font-weight: $heavy;
+}
+// paragraph styling
+.justify-right {
+	text-align: right;
+}
+.justified {
+text-align: justify;
 }
