@@ -2,5 +2,9 @@
   button {
     @include span-columns(4);
     @include shift(4);
+    margin-top: 15px;
   }
+}
+.reset-pass {
+  padding-top: 10px;
 }

@@ -90,7 +90,7 @@
     <hr>
 
     <div class="row">
-      <h4>Bold Text</h4>
+      <h4>Bold Text <code>&lt p &gt</code></h4>
       <b>Lorem ipsum dolor sit</b>
       <hr>
       <h4>Small Text</h4>
@@ -282,6 +282,18 @@
       <button>Input Button</button>
       <button>Input Submit Button</button>
       <hr>
+      <h4>Error Button</h4>
+      <button class="error">Button</button>
+      <button class="error">Submit Button</button>
+      <button class="error">Input Button</button>
+      <button class="error">Input Submit Button</button>
+      <hr>
+      <h4>Success Button</h4>
+      <button class="success">Button</button>
+      <button class="success">Submit Button</button>
+      <button class="success">Input Button</button>
+      <button class="success">Input Submit Button</button>
+      <hr>
       <h4>Alt Button</h4>
       <button class="alt">Button</button>
       <button class="alt">Submit Button</button>
@@ -425,7 +437,7 @@
       <h2 class="has-light-blue"><a name="time"></a>Time</h2>
       <hr class="main-title">
       <h4>Elapsed Time</h4>
-      <p>0:0:0:0 ( H:M:S )</p>
+      <p>0:0:0:0 ( H:M:S:MS )</p>
       <hr>
     </div>
 
@@ -454,7 +466,7 @@
 
     <div class="row">
       <h4>Total Elapsed Time</h4>
-      <p>0:0:0:0 ( H:M:S )</p>
+      <p>0:0:0:0 ( H:M:S:MS )</p>
       <hr>
     </div>
     <!--END TIME-->
@@ -480,19 +492,7 @@
     <div class="row">
       <hr>
       <h4>Login</h4>
-      <div class="login">
-        <div class="username">
-          <label>
-            <input type="text" id="textField" placeholder="username">
-          </label>
-        </div>
-        <div class="pass">
-          <label>
-            <input type="text" id="textField" placeholder="password">
-          </label>
-        </div>
-        <button>Login</button>
-      </div>
+      {{partial "partials/login"}}
     </div>
     <!--END FORMS-->
     <!--GRAPHS-->
@@ -595,12 +595,16 @@
     <h2 class="has-light-blue"><a name="cards"></a>Card</h2>
     <hr class="main-title">
 
-    <div class="row large-6of10">
-      {{partial "partials/card"}}
+    <div class="row">
+      <div class="large-6of10">
+        {{partial "partials/card"}}
+      </div>
     </div>
+
     <div class="row spacing-small">
       <h2 class="has-light-blue">Card PN</h2>
       <hr class="main-title">
+
       <div class="row large-6of10">
         {{partial "partials/card-pn"}}
       </div>

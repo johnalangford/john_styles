@@ -1,7 +1,6 @@
 // GRID CLASSES FOR NON SEMANTIC MARKUP
 .row {
-  display: inline-block;
-  width:100%;
+ @include row;
 }
 
 //OPTIONS
@@ -13,6 +12,7 @@
     display: block !important;
   }
 }
+
 .large-hidden {
   @include media($large-screen-up) {
     display: block !important;
@@ -21,9 +21,11 @@
     display: none !important;
   }
 }
-.shift-1 {
-  @include shift(1);
+
+.shift-5 {
+  @include shift(5);
 }
+
 // spacing //
 .spacing-small {
   padding-top: 50px;
@@ -34,8 +36,6 @@
 .spacing-large {
   padding-top: 100px;
 }
-
-
 
 .small {
   @include media($small-screen-up) {
