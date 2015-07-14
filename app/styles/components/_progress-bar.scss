@@ -1,0 +1,15 @@
+.progress {
+  border-radius:1000px;
+  background-color: #F6F6F6;
+  border: 1px solid white;
+  height: 1.38889rem;
+  margin-bottom: 0.55556rem;
+  padding: 0.11111rem;
+
+  .meter {
+    border-radius:1000px;
+    display: block;
+    height: 100%;
+    float: left;
+  }
+}
